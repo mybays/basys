@@ -1,0 +1,1611 @@
+Release 11.1 - xst L.33 (lin)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> 
+Reading design: BasysRevEDemo.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "BasysRevEDemo.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "BasysRevEDemo"
+Output Format                      : NGC
+Target Device                      : xc3s100e-5-tq144
+
+---- Source Options
+Top Module Name                    : BasysRevEDemo
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Library Search Order               : BasysRevEDemo.lso
+Keep Hierarchy                     : NO
+Netlist Hierarchy                  : as_optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/DispCtrl.vhd" in Library work.
+Entity <DispCtrl> compiled.
+Entity <DispCtrl> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/Synchro.vhd" in Library work.
+Entity <Synchro> compiled.
+Entity <Synchro> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/MouseCtrl.vhd" in Library work.
+Entity <mouse_controller> compiled.
+Entity <mouse_controller> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/Ps2Inerface.vhd" in Library work.
+Entity <ps2interface> compiled.
+Entity <ps2interface> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/gnd10.vhd" in Library work.
+Entity <gnd10> compiled.
+Entity <gnd10> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/clkDllCtrl.vhd" in Library work.
+Entity <clkDllCtrl> compiled.
+Entity <clkDllCtrl> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/ckMux.vhd" in Library work.
+Entity <ckMux> compiled.
+Entity <ckMux> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/VideoRomNoText.vhd" in Library work.
+Entity <VideoRomNoText> compiled.
+Entity <VideoRomNoText> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/SnakeLedDemo.vhd" in Library work.
+Entity <SnakeLedDemo> compiled.
+Entity <SnakeLedDemo> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/BasysRevEDemo.vhf" in Library work.
+Entity <BasysRevEDemo> compiled.
+Entity <BasysRevEDemo> (Architecture <BEHAVIORAL>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <BasysRevEDemo> in library <work> (architecture <BEHAVIORAL>).
+
+Analyzing hierarchy for entity <DispCtrl> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <Synchro> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <mouse_controller> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <ps2interface> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <gnd10> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <clkdllctrl> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <ckMux> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <VideoRomNoText> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <SnakeLedDemo> in library <work> (architecture <Behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <BasysRevEDemo> in library <work> (Architecture <BEHAVIORAL>).
+WARNING:Xst:753 - "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/BasysRevEDemo.vhf" line 194: Unconnected output port 'left' of component 'mouse_controller'.
+WARNING:Xst:753 - "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/BasysRevEDemo.vhf" line 194: Unconnected output port 'middle' of component 'mouse_controller'.
+WARNING:Xst:753 - "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/BasysRevEDemo.vhf" line 194: Unconnected output port 'right' of component 'mouse_controller'.
+WARNING:Xst:753 - "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/BasysRevEDemo.vhf" line 194: Unconnected output port 'new_event' of component 'mouse_controller'.
+WARNING:Xst:753 - "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/BasysRevEDemo.vhf" line 194: Unconnected output port 'zpos' of component 'mouse_controller'.
+WARNING:Xst:753 - "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/BasysRevEDemo.vhf" line 215: Unconnected output port 'busy' of component 'ps2interface'.
+    Set property "rom_extract = yes" for unit <ps2interface>.
+    Set property "rom_style = distributed" for unit <ps2interface>.
+Entity <BasysRevEDemo> analyzed. Unit <BasysRevEDemo> generated.
+
+Analyzing Entity <DispCtrl> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:819 - "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/DispCtrl.vhd" line 97: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <Horigin>, <Vorigin>, <inRed>, <inGreen>, <inBlue>
+Entity <DispCtrl> analyzed. Unit <DispCtrl> generated.
+
+Analyzing Entity <Synchro> in library <work> (Architecture <Behavioral>).
+Entity <Synchro> analyzed. Unit <Synchro> generated.
+
+Analyzing Entity <mouse_controller> in library <work> (Architecture <Behavioral>).
+Entity <mouse_controller> analyzed. Unit <mouse_controller> generated.
+
+Analyzing Entity <ps2interface> in library <work> (Architecture <Behavioral>).
+Entity <ps2interface> analyzed. Unit <ps2interface> generated.
+
+Analyzing Entity <gnd10> in library <work> (Architecture <Behavioral>).
+Entity <gnd10> analyzed. Unit <gnd10> generated.
+
+Analyzing Entity <clkdllctrl> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:753 - "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/clkDllCtrl.vhd" line 93: Unconnected output port 'CLK0' of component 'CLKDLL'.
+WARNING:Xst:753 - "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/clkDllCtrl.vhd" line 93: Unconnected output port 'CLK180' of component 'CLKDLL'.
+WARNING:Xst:753 - "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/clkDllCtrl.vhd" line 93: Unconnected output port 'CLK270' of component 'CLKDLL'.
+WARNING:Xst:753 - "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/clkDllCtrl.vhd" line 93: Unconnected output port 'CLK90' of component 'CLKDLL'.
+WARNING:Xst:753 - "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/clkDllCtrl.vhd" line 93: Unconnected output port 'LOCKED' of component 'CLKDLL'.
+WARNING:Xst:2211 - "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/clkDllCtrl.vhd" line 93: Instantiating black box module <CLKDLL>.
+    Set user-defined property "CLKDV_DIVIDE =  2.0000000000000000" for instance <CLKDLL_inst> in unit <clkdllctrl>.
+    Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <CLKDLL_inst> in unit <clkdllctrl>.
+    Set user-defined property "STARTUP_WAIT =  FALSE" for instance <CLKDLL_inst> in unit <clkdllctrl>.
+Entity <clkdllctrl> analyzed. Unit <clkdllctrl> generated.
+
+Analyzing Entity <ckMux> in library <work> (Architecture <Behavioral>).
+    Set user-defined property "CLK_SEL_TYPE =  SYNC" for instance <BUFGMUX_inst> in unit <ckMux>.
+Entity <ckMux> analyzed. Unit <ckMux> generated.
+
+Analyzing Entity <VideoRomNoText> in library <work> (Architecture <Behavioral>).
+Entity <VideoRomNoText> analyzed. Unit <VideoRomNoText> generated.
+
+Analyzing Entity <SnakeLedDemo> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:1610 - "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/SnakeLedDemo.vhd" line 148: Width mismatch. <NextSnake> has a width of 448 bits but assigned expression is 29-bit wide.
+WARNING:Xst:1610 - "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/SnakeLedDemo.vhd" line 150: Width mismatch. <NextSnake> has a width of 448 bits but assigned expression is 29-bit wide.
+WARNING:Xst:1610 - "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/SnakeLedDemo.vhd" line 158: Width mismatch. <NextSnake<0>> has a width of 64 bits but assigned expression is 5-bit wide.
+WARNING:Xst:1610 - "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/SnakeLedDemo.vhd" line 160: Width mismatch. <NextSnake<0>> has a width of 64 bits but assigned expression is 6-bit wide.
+WARNING:Xst:1610 - "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/SnakeLedDemo.vhd" line 162: Width mismatch. <NextSnake<0>> has a width of 64 bits but assigned expression is 4-bit wide.
+WARNING:Xst:1610 - "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/SnakeLedDemo.vhd" line 164: Width mismatch. <NextSnake<0>> has a width of 64 bits but assigned expression is 4-bit wide.
+WARNING:Xst:1610 - "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/SnakeLedDemo.vhd" line 166: Width mismatch. <NextSnake<0>> has a width of 64 bits but assigned expression is 5-bit wide.
+WARNING:Xst:1610 - "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/SnakeLedDemo.vhd" line 168: Width mismatch. <NextSnake<0>> has a width of 64 bits but assigned expression is 5-bit wide.
+WARNING:Xst:1610 - "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/SnakeLedDemo.vhd" line 170: Width mismatch. <NextSnake<0>> has a width of 64 bits but assigned expression is 3-bit wide.
+WARNING:Xst:1610 - "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/SnakeLedDemo.vhd" line 172: Width mismatch. <NextSnake<0>> has a width of 64 bits but assigned expression is 3-bit wide.
+WARNING:Xst:1610 - "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/SnakeLedDemo.vhd" line 174: Width mismatch. <NextSnake<0>> has a width of 64 bits but assigned expression is 5-bit wide.
+WARNING:Xst:1610 - "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/SnakeLedDemo.vhd" line 178: Width mismatch. <NextSnake<0>> has a width of 64 bits but assigned expression is 6-bit wide.
+WARNING:Xst:1610 - "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/SnakeLedDemo.vhd" line 180: Width mismatch. <NextSnake<0>> has a width of 64 bits but assigned expression is 6-bit wide.
+WARNING:Xst:1610 - "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/SnakeLedDemo.vhd" line 182: Width mismatch. <NextSnake<0>> has a width of 64 bits but assigned expression is 5-bit wide.
+WARNING:Xst:1610 - "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/SnakeLedDemo.vhd" line 184: Width mismatch. <NextSnake<0>> has a width of 64 bits but assigned expression is 4-bit wide.
+WARNING:Xst:1610 - "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/SnakeLedDemo.vhd" line 186: Width mismatch. <NextSnake<0>> has a width of 64 bits but assigned expression is 4-bit wide.
+WARNING:Xst:1610 - "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/SnakeLedDemo.vhd" line 188: Width mismatch. <NextSnake<0>> has a width of 64 bits but assigned expression is 3-bit wide.
+WARNING:Xst:1610 - "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/SnakeLedDemo.vhd" line 190: Width mismatch. <NextSnake<0>> has a width of 64 bits but assigned expression is 3-bit wide.
+WARNING:Xst:1610 - "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/SnakeLedDemo.vhd" line 192: Width mismatch. <NextSnake<0>> has a width of 64 bits but assigned expression is 5-bit wide.
+WARNING:Xst:1610 - "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/SnakeLedDemo.vhd" line 194: Width mismatch. <NextSnake<0>> has a width of 64 bits but assigned expression is 5-bit wide.
+WARNING:Xst:819 - "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/SnakeLedDemo.vhd" line 144: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <Snake<0>>, <Target>, <NextTarget>, <Snake<1>>, <Snake<2>>, <Snake<3>>, <Snake<4>>, <Snake<5>>, <Snake<6>>, <Direction>
+WARNING:Xst:819 - "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/SnakeLedDemo.vhd" line 201: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <Snake<0>>, <Target>
+WARNING:Xst:819 - "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/SnakeLedDemo.vhd" line 217: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <Snake<0>>, <segPwm>, <Target>, <Snake<1>>, <Snake<2>>, <Snake<3>>, <Snake<4>>, <Snake<5>>, <Snake<6>>
+Entity <SnakeLedDemo> analyzed. Unit <SnakeLedDemo> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <DispCtrl>.
+    Related source file is "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/DispCtrl.vhd".
+WARNING:Xst:737 - Found 32-bit latch for signal <Horigin>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <Vorigin>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 6-bit subtractor for signal <adrVideoLine>.
+    Found 6-bit subtractor for signal <adrVideoPixel>.
+    Found 28-bit up counter for signal <cntDyn>.
+    Found 8-bit subtractor for signal <outBlue$sub0000> created at line 121.
+    Found 8-bit subtractor for signal <outGreen$sub0000> created at line 118.
+    Found 32-bit adder for signal <outRed$add0000> created at line 100.
+    Found 32-bit adder for signal <outRed$add0001> created at line 100.
+    Found 8-bit subtractor for signal <outRed$addsub0000> created at line 115.
+    Found 32-bit comparator greater for signal <outRed$cmp_gt0000> created at line 100.
+    Found 32-bit comparator greater for signal <outRed$cmp_gt0001> created at line 100.
+    Found 10-bit comparator less for signal <outRed$cmp_lt0000> created at line 99.
+    Found 10-bit comparator less for signal <outRed$cmp_lt0001> created at line 99.
+    Found 32-bit comparator less for signal <outRed$cmp_lt0002> created at line 100.
+    Found 32-bit comparator less for signal <outRed$cmp_lt0003> created at line 100.
+    Found 11-bit adder for signal <outRed$sub0000> created at line 115.
+    Found 8-bit subtractor for signal <outRed$sub0001> created at line 115.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   9 Adder/Subtractor(s).
+	inferred   6 Comparator(s).
+Unit <DispCtrl> synthesized.
+
+
+Synthesizing Unit <Synchro>.
+    Related source file is "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/Synchro.vhd".
+    Found 1-bit register for signal <HS>.
+    Found 1-bit register for signal <VS>.
+    Found 10-bit up counter for signal <intHcnt>.
+    Found 10-bit up counter for signal <intVcnt>.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   2 D-type flip-flop(s).
+Unit <Synchro> synthesized.
+
+
+Synthesizing Unit <mouse_controller>.
+    Related source file is "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/MouseCtrl.vhd".
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 34                                             |
+    | Transitions        | 91                                             |
+    | Inputs             | 8                                              |
+    | Outputs            | 20                                             |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | reset                                          |
+    | Power Up State     | reset                                          |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit register for signal <tx_data>.
+    Found 1-bit register for signal <new_event>.
+    Found 4-bit register for signal <zpos>.
+    Found 1-bit register for signal <right>.
+    Found 1-bit register for signal <middle>.
+    Found 1-bit register for signal <left>.
+    Found 10-bit register for signal <ypos>.
+    Found 10-bit register for signal <xpos>.
+    Found 1-bit register for signal <write>.
+    Found 1-bit register for signal <haswheel>.
+    Found 1-bit register for signal <left_down>.
+    Found 1-bit register for signal <middle_down>.
+    Found 1-bit register for signal <right_down>.
+    Found 8-bit register for signal <x_inc>.
+    Found 11-bit adder for signal <x_inter$add0001> created at line 366.
+    Found 10-bit register for signal <x_max>.
+    Found 1-bit register for signal <x_new>.
+    Found 1-bit register for signal <x_overflow>.
+    Found 11-bit register for signal <x_pos>.
+    Found 11-bit adder for signal <x_pos$addsub0000> created at line 390.
+    Found 11-bit comparator greater for signal <x_pos$cmp_gt0000> created at line 394.
+    Found 1-bit register for signal <x_sign>.
+    Found 8-bit register for signal <y_inc>.
+    Found 8-bit adder for signal <y_inc$addsub0000> created at line 966.
+    Found 11-bit adder for signal <y_inter$add0001> created at line 430.
+    Found 10-bit register for signal <y_max>.
+    Found 1-bit register for signal <y_new>.
+    Found 1-bit register for signal <y_overflow>.
+    Found 11-bit register for signal <y_pos>.
+    Found 11-bit adder for signal <y_pos$addsub0000> created at line 454.
+    Found 11-bit comparator greater for signal <y_pos$cmp_gt0000> created at line 458.
+    Found 1-bit register for signal <y_sign>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred 105 D-type flip-flop(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+Unit <mouse_controller> synthesized.
+
+
+Synthesizing Unit <ps2interface>.
+    Related source file is "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/Ps2Inerface.vhd".
+    Found 256x1-bit ROM for signal <tx_parity$rom0000> created at line 411.
+    Found 256x1-bit ROM for signal <rx_parity$rom0000> created at line 408.
+    Found finite state machine <FSM_1> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 17                                             |
+    | Transitions        | 39                                             |
+    | Inputs             | 10                                             |
+    | Outputs            | 19                                             |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit tristate buffer for signal <ps2_clk>.
+    Found 1-bit register for signal <read>.
+    Found 8-bit register for signal <rx_data>.
+    Found 1-bit tristate buffer for signal <ps2_data>.
+    Found 1-bit register for signal <err>.
+    Found 4-bit up counter for signal <bit_count>.
+    Found 4-bit up counter for signal <clk_count>.
+    Found 1-bit register for signal <clk_inter>.
+    Found 1-bit xor2 for signal <clk_inter$xor0000> created at line 363.
+    Found 4-bit up counter for signal <data_count>.
+    Found 1-bit register for signal <data_inter>.
+    Found 1-bit xor2 for signal <data_inter$xor0000> created at line 387.
+    Found 14-bit up counter for signal <delay_100us_count>.
+    Found 1-bit register for signal <delay_100us_done>.
+    Found 11-bit up counter for signal <delay_20us_count>.
+    Found 1-bit register for signal <delay_20us_done>.
+    Found 6-bit up counter for signal <delay_63clk_count>.
+    Found 1-bit register for signal <delay_63clk_done>.
+    Found 11-bit register for signal <frame>.
+    Found 1-bit register for signal <load_rx_data>.
+    Found 1-bit xor2 for signal <load_rx_data$xor0000> created at line 488.
+    Found 1-bit register for signal <load_tx_data>.
+    Found 1-bit register for signal <ps2_clk_clean>.
+    Found 1-bit register for signal <ps2_clk_h>.
+    Found 1-bit register for signal <ps2_clk_s>.
+    Found 1-bit register for signal <ps2_data_clean>.
+    Found 1-bit register for signal <ps2_data_h>.
+    Found 1-bit register for signal <ps2_data_s>.
+    Found 1-bit register for signal <rx_parity>.
+    Found 1-bit register for signal <tx_parity>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   2 ROM(s).
+	inferred   6 Counter(s).
+	inferred  36 D-type flip-flop(s).
+	inferred   2 Tristate(s).
+Unit <ps2interface> synthesized.
+
+
+Synthesizing Unit <gnd10>.
+    Related source file is "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/gnd10.vhd".
+Unit <gnd10> synthesized.
+
+
+Synthesizing Unit <VideoRomNoText>.
+    Related source file is "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/VideoRomNoText.vhd".
+    Found 4096x3-bit ROM for signal <outRed$rom0000> created at line 113.
+    Found 4096x3-bit ROM for signal <outRed$rom0001> created at line 113.
+    Found 4096x3-bit ROM for signal <outRed$rom0002> created at line 113.
+    Found 4096x3-bit ROM for signal <outRed$rom0003> created at line 113.
+    Found 4096x3-bit ROM for signal <outRed$rom0004> created at line 113.
+    Found 4096x3-bit ROM for signal <outRed$rom0005> created at line 113.
+    Found 4096x3-bit ROM for signal <outRed$rom0006> created at line 113.
+    Found 4096x3-bit ROM for signal <outRed$rom0007> created at line 113.
+    Found 4096x3-bit ROM for signal <outRed$rom0008> created at line 113.
+    Found 4096x3-bit ROM for signal <outRed$rom0009> created at line 113.
+    Found 4096x3-bit ROM for signal <outRed$rom0010> created at line 113.
+    Found 4096x3-bit ROM for signal <outRed$rom0011> created at line 113.
+    Found 4096x3-bit ROM for signal <outRed$rom0012> created at line 113.
+    Found 4096x3-bit ROM for signal <outRed$rom0013> created at line 113.
+    Found 4096x3-bit ROM for signal <outGreen$rom0000> created at line 113.
+    Found 4096x3-bit ROM for signal <outGreen$rom0001> created at line 113.
+    Found 4096x3-bit ROM for signal <outGreen$rom0002> created at line 113.
+    Found 4096x3-bit ROM for signal <outGreen$rom0003> created at line 113.
+    Found 4096x3-bit ROM for signal <outGreen$rom0004> created at line 113.
+    Found 4096x3-bit ROM for signal <outGreen$rom0005> created at line 113.
+    Found 4096x3-bit ROM for signal <outGreen$rom0006> created at line 113.
+    Found 4096x3-bit ROM for signal <outGreen$rom0007> created at line 113.
+    Found 4096x3-bit ROM for signal <outGreen$rom0008> created at line 113.
+    Found 4096x3-bit ROM for signal <outGreen$rom0009> created at line 113.
+    Found 4096x3-bit ROM for signal <outGreen$rom0010> created at line 113.
+    Found 4096x3-bit ROM for signal <outGreen$rom0011> created at line 113.
+    Found 4096x3-bit ROM for signal <outGreen$rom0012> created at line 113.
+    Found 4096x3-bit ROM for signal <outGreen$rom0013> created at line 113.
+    Found 4096x3-bit ROM for signal <outBlue$rom0000> created at line 113.
+    Found 4096x3-bit ROM for signal <outBlue$rom0001> created at line 113.
+    Found 4096x3-bit ROM for signal <outBlue$rom0002> created at line 113.
+    Found 4096x3-bit ROM for signal <outBlue$rom0003> created at line 113.
+    Found 4096x3-bit ROM for signal <outBlue$rom0004> created at line 113.
+    Found 4096x3-bit ROM for signal <outBlue$rom0005> created at line 113.
+    Found 4096x3-bit ROM for signal <outBlue$rom0006> created at line 113.
+    Found 4096x3-bit ROM for signal <outBlue$rom0007> created at line 113.
+    Found 4096x3-bit ROM for signal <outBlue$rom0008> created at line 113.
+    Found 4096x3-bit ROM for signal <outBlue$rom0009> created at line 113.
+    Found 4096x3-bit ROM for signal <outBlue$rom0010> created at line 113.
+    Found 4096x3-bit ROM for signal <outBlue$rom0011> created at line 113.
+    Summary:
+	inferred  40 ROM(s).
+Unit <VideoRomNoText> synthesized.
+
+
+Synthesizing Unit <SnakeLedDemo>.
+    Related source file is "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/SnakeLedDemo.vhd".
+WARNING:Xst:1780 - Signal <segPwm<7>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 4x4-bit ROM for signal <an$mux0001> created at line 207.
+WARNING:Xst:737 - Found 32-bit latch for signal <NextSnake<0>_0>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 32-bit latch for signal <NextSnake<0>_1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 3-bit subtractor for signal <$sub0000> created at line 157.
+    Found 2-bit adder carry out for signal <add0000$addsub0000> created at line 177.
+    Found 8-bit updown counter for signal <cmpPwm>.
+    Found 26-bit up counter for signal <cntDiv>.
+    Found 1-bit register for signal <Direction<0>>.
+    Found 2-bit comparator greatequal for signal <Direction_0$cmp_ge0000> created at line 128.
+    Found 2-bit comparator lessequal for signal <Direction_0$cmp_le0000> created at line 127.
+    Found 32-bit comparator not equal for signal <Direction_0$cmp_ne0000>.
+    Found 2-bit comparator equal for signal <dp$cmp_eq0000> created at line 229.
+    Found 9-bit comparator less for signal <led_0$cmp_lt0000> created at line 103.
+    Found 9-bit comparator less for signal <led_1$cmp_lt0000> created at line 103.
+    Found 9-bit comparator less for signal <led_2$cmp_lt0000> created at line 103.
+    Found 9-bit comparator less for signal <led_3$cmp_lt0000> created at line 103.
+    Found 9-bit comparator less for signal <led_4$cmp_lt0000> created at line 103.
+    Found 9-bit comparator less for signal <led_5$cmp_lt0000> created at line 103.
+    Found 9-bit comparator less for signal <led_6$cmp_lt0000> created at line 103.
+    Found 9-bit comparator less for signal <led_7$cmp_lt0000> created at line 103.
+    Found 2-bit adder carry out for signal <NextSnake<0>_0$addsub0000> created at line 178.
+    Found 2-bit adder carry out for signal <NextSnake<0>_0$addsub0001> created at line 180.
+    Found 32-bit comparator equal for signal <NextSnake<0>_0$cmp_eq0000>.
+    Found 32-bit comparator equal for signal <NextSnake<0>_0$cmp_eq0001>.
+    Found 32-bit comparator equal for signal <NextSnake<0>_0$cmp_eq0002>.
+    Found 32-bit comparator equal for signal <NextSnake<0>_0$cmp_eq0003>.
+    Found 32-bit comparator equal for signal <NextSnake<0>_0$cmp_eq0004>.
+    Found 32-bit comparator equal for signal <NextSnake<0>_0$cmp_eq0005>.
+    Found 32-bit comparator not equal for signal <NextSnake<0>_0$cmp_ne0000>.
+    Found 32-bit comparator not equal for signal <NextSnake<0>_0$cmp_ne0001>.
+    Found 32-bit comparator not equal for signal <NextSnake<0>_0$cmp_ne0002>.
+    Found 32-bit comparator not equal for signal <NextSnake<0>_0$cmp_ne0009>.
+    Found 32-bit comparator not equal for signal <NextSnake<0>_0$cmp_ne0010>.
+    Found 32-bit comparator not equal for signal <NextSnake<0>_0$cmp_ne0011>.
+    Found 2-bit subtractor for signal <NextSnake<0>_0$sub0000> created at line 158.
+    Found 3-bit subtractor for signal <NextSnake<0>_0$sub0001> created at line 160.
+    Found 32-bit comparator equal for signal <NextSnake<4>_1$cmp_eq0000>.
+    Found 2-bit comparator less for signal <NextSnake<4>_1$cmp_lt0000> created at line 148.
+    Found 2-bit register for signal <NextTarget>.
+    Found 32-bit comparator equal for signal <seg_0$cmp_eq0000>.
+    Found 32-bit comparator equal for signal <seg_0$cmp_eq0002>.
+    Found 32-bit comparator equal for signal <seg_0$cmp_eq0004>.
+    Found 32-bit comparator equal for signal <seg_0$cmp_eq0006>.
+    Found 32-bit comparator equal for signal <seg_0$cmp_eq0008>.
+    Found 32-bit comparator equal for signal <seg_0$cmp_eq0010>.
+    Found 32-bit comparator equal for signal <seg_0$cmp_eq0012>.
+    Found 64-bit register for signal <Snake<0>>.
+    Found 64-bit register for signal <Snake<1>>.
+    Found 32-bit 4-to-1 multiplexer for signal <Snake<1>_1$mux0000>.
+    Found 64-bit register for signal <Snake<2>>.
+    Found 64-bit register for signal <Snake<3>>.
+    Found 2-bit comparator greater for signal <Snake<3>_1$cmp_gt0000> created at line 147.
+    Found 32-bit 4-to-1 multiplexer for signal <Snake<3>_1$mux0000>.
+    Found 64-bit register for signal <Snake<4>>.
+    Found 32-bit 4-to-1 multiplexer for signal <Snake<4>_1$mux0000>.
+    Found 64-bit register for signal <Snake<5>>.
+    Found 64-bit register for signal <Snake<6>>.
+    Found 32-bit 4-to-1 multiplexer for signal <Snake<6>_1$mux0000>.
+    Found 2-bit register for signal <Target>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   9 Counter(s).
+	inferred 453 D-type flip-flop(s).
+	inferred   6 Adder/Subtractor(s).
+	inferred  34 Comparator(s).
+	inferred 128 Multiplexer(s).
+Unit <SnakeLedDemo> synthesized.
+
+
+Synthesizing Unit <clkdllctrl>.
+    Related source file is "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/clkDllCtrl.vhd".
+WARNING:Xst:1780 - Signal <ckX2> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <clkdllctrl> synthesized.
+
+
+Synthesizing Unit <ckMux>.
+    Related source file is "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/ckMux.vhd".
+    Found 1-bit register for signal <ck0Div2>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <ckMux> synthesized.
+
+
+Synthesizing Unit <BasysRevEDemo>.
+    Related source file is "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/BasysRevEDemo.vhf".
+Unit <BasysRevEDemo> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 43
+ 256x1-bit ROM                                         : 2
+ 4096x3-bit ROM                                        : 40
+ 4x4-bit ROM                                           : 1
+# Adders/Subtractors                                   : 20
+ 11-bit adder                                          : 5
+ 2-bit adder carry out                                 : 3
+ 2-bit subtractor                                      : 1
+ 3-bit subtractor                                      : 2
+ 32-bit adder                                          : 2
+ 6-bit subtractor                                      : 2
+ 8-bit adder                                           : 1
+ 8-bit subtractor                                      : 4
+# Counters                                             : 18
+ 10-bit up counter                                     : 2
+ 11-bit up counter                                     : 1
+ 14-bit up counter                                     : 1
+ 26-bit up counter                                     : 1
+ 28-bit up counter                                     : 1
+ 4-bit up counter                                      : 3
+ 6-bit up counter                                      : 1
+ 8-bit updown counter                                  : 8
+# Registers                                            : 74
+ 1-bit register                                        : 47
+ 10-bit register                                       : 4
+ 11-bit register                                       : 2
+ 2-bit register                                        : 2
+ 32-bit register                                       : 14
+ 4-bit register                                        : 1
+ 8-bit register                                        : 4
+# Latches                                              : 4
+ 32-bit latch                                          : 4
+# Comparators                                          : 42
+ 10-bit comparator less                                : 2
+ 11-bit comparator greater                             : 2
+ 2-bit comparator equal                                : 1
+ 2-bit comparator greatequal                           : 1
+ 2-bit comparator greater                              : 1
+ 2-bit comparator less                                 : 1
+ 2-bit comparator lessequal                            : 1
+ 32-bit comparator equal                               : 14
+ 32-bit comparator greater                             : 2
+ 32-bit comparator less                                : 2
+ 32-bit comparator not equal                           : 7
+ 9-bit comparator less                                 : 8
+# Multiplexers                                         : 4
+ 32-bit 4-to-1 multiplexer                             : 4
+# Tristates                                            : 2
+ 1-bit tristate buffer                                 : 2
+# Xors                                                 : 3
+ 1-bit xor2                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_1> for best encoding.
+Choose code 1 with characteristics nb_luts=48,nb_literals=115,nb_ffs=17,depth=3 ...
+Optimizing FSM <XLXI_27/state/FSM> on signal <state[1:17]> with one-hot encoding.
+-------------------------------------------------
+ State                      | Encoding
+-------------------------------------------------
+ idle                       | 00000000000000001
+ rx_clk_h                   | 00000000000100000
+ rx_clk_l                   | 00000000001000000
+ rx_down_edge               | 00000000000000010
+ rx_error_parity            | 00000000000001000
+ rx_data_ready              | 00000000000010000
+ tx_force_clk_l             | 00000000000000100
+ tx_bring_data_down         | 00000000010000000
+ tx_release_clk             | 00000000100000000
+ tx_first_wait_down_edge    | 00000001000000000
+ tx_clk_l                   | 00000010000000000
+ tx_wait_up_edge            | 00000100000000000
+ tx_clk_h                   | 00010000000000000
+ tx_wait_up_edge_before_ack | 00001000000000000
+ tx_wait_ack                | 00100000000000000
+ tx_received_ack            | 01000000000000000
+ tx_error_no_ack            | 10000000000000000
+-------------------------------------------------
+Analyzing FSM <FSM_0> for best encoding.
+Choose code 1 with characteristics nb_luts=58,nb_literals=161,nb_ffs=34,depth=4 ...
+Optimizing FSM <XLXI_25/state/FSM> on signal <state[1:34]> with one-hot encoding.
+---------------------------------------------------------------------------
+ State                               | Encoding
+---------------------------------------------------------------------------
+ reset                               | 0000000000000000000000000000000001
+ reset_wait_ack                      | 0000000000000000000000000000000010
+ reset_wait_bat_completion           | 0000000000000000000000000000000100
+ reset_wait_id                       | 0000000000000000000000000000001000
+ reset_set_sample_rate_200           | 0000000000000000000000000000010000
+ reset_set_sample_rate_200_wait_ack  | 0000000000000000000000000000100000
+ reset_send_sample_rate_200          | 0000000000000000000000000001000000
+ reset_send_sample_rate_200_wait_ack | 0000000000000000000000000010000000
+ reset_set_sample_rate_100           | 0000000000000000000000000100000000
+ reset_set_sample_rate_100_wait_ack  | 0000000000000000000000001000000000
+ reset_send_sample_rate_100          | 0000000000000000000000010000000000
+ reset_send_sample_rate_100_wait_ack | 0000000000000000000000100000000000
+ reset_set_sample_rate_80            | 0000000000000000000001000000000000
+ reset_set_sample_rate_80_wait_ack   | 0000000000000000000010000000000000
+ reset_send_sample_rate_80           | 0000000000000000000100000000000000
+ reset_send_sample_rate_80_wait_ack  | 0000000000000000001000000000000000
+ reset_read_id                       | 0000000000000000010000000000000000
+ reset_read_id_wait_ack              | 0000000000000000100000000000000000
+ reset_read_id_wait_id               | 0000000000000001000000000000000000
+ reset_set_resolution                | 0000000000000010000000000000000000
+ reset_set_resolution_wait_ack       | 0000000000000100000000000000000000
+ reset_send_resolution               | 0000000000001000000000000000000000
+ reset_send_resolution_wait_ack      | 0000000000010000000000000000000000
+ reset_set_sample_rate_40            | 0000000000100000000000000000000000
+ reset_set_sample_rate_40_wait_ack   | 0000000001000000000000000000000000
+ reset_send_sample_rate_40           | 0000000010000000000000000000000000
+ reset_send_sample_rate_40_wait_ack  | 0000000100000000000000000000000000
+ reset_enable_reporting              | 0000001000000000000000000000000000
+ reset_enable_reporting_wait_ack     | 0000010000000000000000000000000000
+ read_byte_1                         | 0000100000000000000000000000000000
+ read_byte_2                         | 0001000000000000000000000000000000
+ read_byte_3                         | 0010000000000000000000000000000000
+ read_byte_4                         | 0100000000000000000000000000000000
+ mark_new_event                      | 1000000000000000000000000000000000
+---------------------------------------------------------------------------
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_4> has a constant value of 0 in block <XLXI_175>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_3> has a constant value of 0 in block <XLXI_175>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <31>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <30>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <29>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <28>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <27>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <26>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <25>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <24>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <23>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <22>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <21>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <20>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <19>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <18>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <17>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <15>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <13>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <12>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <11>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <10>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <9>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_31> has a constant value of 0 in block <XLXI_175>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_30> has a constant value of 0 in block <XLXI_175>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_29> has a constant value of 0 in block <XLXI_175>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_28> has a constant value of 0 in block <XLXI_175>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_27> has a constant value of 0 in block <XLXI_175>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_26> has a constant value of 0 in block <XLXI_175>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_25> has a constant value of 0 in block <XLXI_175>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_24> has a constant value of 0 in block <XLXI_175>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_23> has a constant value of 0 in block <XLXI_175>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_22> has a constant value of 0 in block <XLXI_175>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_21> has a constant value of 0 in block <XLXI_175>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_20> has a constant value of 0 in block <XLXI_175>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_19> has a constant value of 0 in block <XLXI_175>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_18> has a constant value of 0 in block <XLXI_175>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_17> has a constant value of 0 in block <XLXI_175>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_16> has a constant value of 0 in block <XLXI_175>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_15> has a constant value of 0 in block <XLXI_175>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_14> has a constant value of 0 in block <XLXI_175>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_13> has a constant value of 0 in block <XLXI_175>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_12> has a constant value of 0 in block <XLXI_175>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_11> has a constant value of 0 in block <XLXI_175>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_10> has a constant value of 0 in block <XLXI_175>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_9> has a constant value of 0 in block <XLXI_175>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_8> has a constant value of 0 in block <XLXI_175>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_7> has a constant value of 0 in block <XLXI_175>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_6> has a constant value of 0 in block <XLXI_175>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_5> has a constant value of 0 in block <XLXI_175>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <13>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <12>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <11>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <10>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <31>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <30>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <29>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <28>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <27>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <26>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <25>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <24>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <23>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <22>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <21>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <20>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <19>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <18>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <17>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <15>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <14>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <13>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <12>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <11>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <10>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y_max_9> has a constant value of 0 in block <XLXI_25>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <y_max_5> has a constant value of 0 in block <XLXI_25>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x_max_8> has a constant value of 0 in block <XLXI_25>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x_max_7> has a constant value of 0 in block <XLXI_25>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <31>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <30>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <29>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <28>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <27>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <26>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <25>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <24>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <23>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <22>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <21>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <20>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <19>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <18>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <17>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <16>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <15>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <14>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <ps2interface>.
+INFO:Xst - HDL ADVISOR - LUT implementation is currently selected for the ROM <Mrom_rx_parity_rom0000>. If you want the register to be removed and the ROM to be implemented as read-only block RAM, please change the ROM implementation style accordingly.
+INFO:Xst - HDL ADVISOR - LUT implementation is currently selected for the ROM <Mrom_tx_parity_rom0000>. If you want the register to be removed and the ROM to be implemented as read-only block RAM, please change the ROM implementation style accordingly.
+Unit <ps2interface> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 2
+# ROMs                                                 : 39
+ 256x1-bit ROM                                         : 2
+ 4096x3-bit ROM                                        : 36
+ 4x4-bit ROM                                           : 1
+# Adders/Subtractors                                   : 20
+ 11-bit adder                                          : 4
+ 2-bit adder carry out                                 : 3
+ 2-bit subtractor                                      : 1
+ 3-bit subtractor                                      : 2
+ 32-bit adder                                          : 2
+ 6-bit subtractor                                      : 2
+ 8-bit adder                                           : 2
+ 8-bit subtractor                                      : 4
+# Counters                                             : 18
+ 10-bit up counter                                     : 2
+ 11-bit up counter                                     : 1
+ 14-bit up counter                                     : 1
+ 26-bit up counter                                     : 1
+ 28-bit up counter                                     : 1
+ 4-bit up counter                                      : 3
+ 6-bit up counter                                      : 1
+ 8-bit updown counter                                  : 8
+# Registers                                            : 597
+ Flip-Flops                                            : 597
+# Latches                                              : 4
+ 32-bit latch                                          : 4
+# Comparators                                          : 42
+ 10-bit comparator less                                : 2
+ 11-bit comparator greater                             : 2
+ 2-bit comparator equal                                : 1
+ 2-bit comparator greatequal                           : 1
+ 2-bit comparator greater                              : 1
+ 2-bit comparator less                                 : 1
+ 2-bit comparator lessequal                            : 1
+ 32-bit comparator equal                               : 14
+ 32-bit comparator greater                             : 2
+ 32-bit comparator less                                : 2
+ 32-bit comparator not equal                           : 7
+ 9-bit comparator less                                 : 8
+# Multiplexers                                         : 4
+ 32-bit 4-to-1 multiplexer                             : 4
+# Xors                                                 : 3
+ 1-bit xor2                                            : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <31> in Unit <LPM_LATCH_100> is equivalent to the following 28 FFs/Latches, which will be removed : <30> <29> <28> <27> <26> <25> <24> <23> <22> <21> <20> <19> <18> <17> <16> <15> <14> <13> <12> <11> <10> <9> <8> <7> <6> <5> <4> <3> 
+INFO:Xst:2261 - The FF/Latch <31> in Unit <LPM_LATCH_34> is equivalent to the following 21 FFs/Latches, which will be removed : <30> <29> <28> <27> <26> <25> <24> <23> <22> <21> <20> <19> <18> <17> <16> <15> <14> <13> <12> <11> <10> 
+INFO:Xst:2261 - The FF/Latch <31> in Unit <LPM_LATCH_1> is equivalent to the following 21 FFs/Latches, which will be removed : <30> <29> <28> <27> <26> <25> <24> <23> <22> <21> <20> <19> <18> <17> <16> <15> <14> <13> <12> <11> <10> 
+INFO:Xst:2261 - The FF/Latch <x_max_7> in Unit <mouse_controller> is equivalent to the following 3 FFs/Latches, which will be removed : <x_max_8> <y_max_5> <y_max_9> 
+INFO:Xst:2261 - The FF/Latch <x_max_0> in Unit <mouse_controller> is equivalent to the following 15 FFs/Latches, which will be removed : <x_max_1> <x_max_2> <x_max_3> <x_max_4> <x_max_5> <x_max_6> <x_max_9> <y_max_0> <y_max_1> <y_max_2> <y_max_3> <y_max_4> <y_max_6> <y_max_7> <y_max_8> 
+WARNING:Xst:1293 - FF/Latch <31> has a constant value of 0 in block <LPM_LATCH_100>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <31> has a constant value of 0 in block <LPM_LATCH_34>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <31> has a constant value of 0 in block <LPM_LATCH_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <x_max_7> has a constant value of 0 in block <mouse_controller>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2146 - In block <VideoRomNoText>, ROM <Mrom_outRed_rom0004> <Mrom_outRed_rom0001> <Mrom_outRed_rom0003> <Mrom_outRed_rom0005> <Mrom_outRed_rom0006> <Mrom_outRed_rom0007> <Mrom_outRed_rom0008> <Mrom_outRed_rom0009> <Mrom_outRed_rom0010> <Mrom_outRed_rom0013> <Mrom_outRed_rom0011> <Mrom_outRed_rom0012> <Mrom_outGreen_rom0000> <Mrom_outGreen_rom0001> <Mrom_outGreen_rom0003> <Mrom_outGreen_rom0004> <Mrom_outGreen_rom0005> <Mrom_outGreen_rom0006> <Mrom_outGreen_rom0009> <Mrom_outGreen_rom0007> <Mrom_outGreen_rom0008> <Mrom_outGreen_rom0010> <Mrom_outGreen_rom0011> <Mrom_outGreen_rom0012> <Mrom_outGreen_rom0013> <Mrom_outBlue_rom0000> <Mrom_outBlue_rom0001> <Mrom_outBlue_rom0005> <Mrom_outBlue_rom0003> <Mrom_outBlue_rom0004> <Mrom_outBlue_rom0006> <Mrom_outBlue_rom0007> <Mrom_outBlue_rom0008> <Mrom_outBlue_rom0009> <Mrom_outBlue_rom0010> <Mrom_outBlue_rom0011> are equivalent, XST will keep only <Mrom_outRed_rom0004>.
+WARNING:Xst:2677 - Node <cntDiv_22> of sequential type is unconnected in block <SnakeLedDemo>.
+WARNING:Xst:2677 - Node <cntDiv_23> of sequential type is unconnected in block <SnakeLedDemo>.
+WARNING:Xst:2677 - Node <cntDiv_24> of sequential type is unconnected in block <SnakeLedDemo>.
+WARNING:Xst:2677 - Node <cntDiv_25> of sequential type is unconnected in block <SnakeLedDemo>.
+WARNING:Xst:1293 - FF/Latch <Snake<1>_1_14> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<1>_1_15> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<1>_1_16> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<1>_1_17> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<1>_1_18> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<1>_1_19> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<1>_1_20> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<1>_1_21> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<1>_1_22> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<1>_1_23> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<1>_1_24> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<1>_1_25> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<1>_1_26> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<1>_1_27> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<1>_1_28> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<1>_1_29> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<1>_1_30> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<1>_1_31> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<6>_1_3> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<6>_1_4> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<6>_1_5> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<6>_1_6> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<6>_1_7> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<6>_1_8> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<6>_1_9> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<3>_1_18> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<3>_1_19> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<3>_1_20> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<3>_1_21> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<3>_1_22> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<3>_1_23> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<3>_1_24> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<3>_1_25> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<3>_1_26> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<3>_1_27> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<3>_1_28> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<3>_1_29> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<3>_1_30> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<3>_1_31> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<1>_1_3> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<1>_1_4> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<1>_1_5> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<1>_1_6> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<1>_1_7> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<1>_1_8> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<1>_1_9> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<1>_1_10> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<1>_1_11> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<1>_1_12> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<1>_1_13> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<4>_1_7> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<4>_1_8> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<4>_1_9> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<4>_1_10> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<4>_1_11> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<4>_1_12> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<4>_1_13> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<4>_1_14> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<4>_1_15> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<4>_1_16> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<4>_1_17> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<4>_1_18> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<4>_1_19> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<4>_1_20> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<4>_1_21> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<4>_1_22> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<4>_1_23> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<4>_1_24> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<4>_1_25> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<4>_1_26> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<4>_1_27> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<4>_1_28> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<4>_1_29> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<4>_1_30> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<4>_1_31> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<6>_1_10> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<6>_1_11> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<6>_1_12> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<6>_1_13> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<6>_1_14> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<6>_1_15> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<6>_1_16> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<6>_1_17> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<6>_1_18> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<6>_1_19> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<6>_1_20> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<6>_1_21> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<6>_1_22> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<6>_1_23> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<6>_1_24> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<6>_1_25> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<6>_1_26> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<6>_1_27> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<6>_1_28> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<6>_1_29> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<6>_1_30> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<6>_1_31> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<4>_1_3> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<4>_1_4> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<4>_1_5> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<4>_1_6> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_29> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_30> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_31> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<5>_1_3> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<5>_1_4> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<5>_1_5> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<5>_1_6> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<5>_1_7> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<5>_1_8> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<5>_1_9> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<5>_1_10> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<5>_1_11> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<5>_1_12> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<5>_1_13> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<5>_1_14> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<5>_1_15> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<5>_1_16> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<5>_1_17> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<5>_1_18> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<5>_1_19> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<5>_1_20> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<5>_1_21> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<5>_1_22> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<5>_1_23> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<5>_1_24> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_3> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_4> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_5> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_6> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_7> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_8> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_9> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_10> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_11> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_12> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_13> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_14> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_15> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_16> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_17> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_18> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_19> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_20> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_21> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_22> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_23> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_24> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_25> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_26> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_27> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<0>_1_28> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<2>_1_22> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<2>_1_23> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<2>_1_24> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<2>_1_25> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<2>_1_26> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<2>_1_27> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<2>_1_28> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<2>_1_29> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<2>_1_30> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<2>_1_31> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<3>_1_3> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<3>_1_4> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<3>_1_5> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<3>_1_6> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<3>_1_7> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<3>_1_8> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<3>_1_9> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<3>_1_10> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<3>_1_11> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<3>_1_12> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<3>_1_13> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<3>_1_14> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<3>_1_15> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<3>_1_16> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<3>_1_17> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<5>_1_25> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<5>_1_26> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<5>_1_27> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<5>_1_28> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<5>_1_29> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<5>_1_30> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<5>_1_31> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<2>_1_3> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<2>_1_4> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<2>_1_5> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<2>_1_6> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<2>_1_7> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<2>_1_8> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<2>_1_9> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<2>_1_10> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<2>_1_11> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<2>_1_12> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<2>_1_13> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<2>_1_14> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<2>_1_15> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<2>_1_16> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<2>_1_17> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<2>_1_18> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<2>_1_19> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<2>_1_20> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Snake<2>_1_21> has a constant value of 0 in block <SnakeLedDemo>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <BasysRevEDemo> ...
+
+Optimizing unit <Synchro> ...
+
+Optimizing unit <mouse_controller> ...
+
+Optimizing unit <VideoRomNoText> ...
+
+Optimizing unit <DispCtrl> ...
+
+Optimizing unit <SnakeLedDemo> ...
+WARNING:Xst:1426 - The value init of the FF/Latch XLXI_25/x_max_0 hinder the constant cleaning in the block BasysRevEDemo.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1293 - FF/Latch <XLXI_25/x_max_0> has a constant value of 1 in block <BasysRevEDemo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <XLXI_25/middle> of sequential type is unconnected in block <BasysRevEDemo>.
+WARNING:Xst:2677 - Node <XLXI_25/right> of sequential type is unconnected in block <BasysRevEDemo>.
+WARNING:Xst:2677 - Node <XLXI_25/left> of sequential type is unconnected in block <BasysRevEDemo>.
+WARNING:Xst:2677 - Node <XLXI_25/zpos_3> of sequential type is unconnected in block <BasysRevEDemo>.
+WARNING:Xst:2677 - Node <XLXI_25/zpos_2> of sequential type is unconnected in block <BasysRevEDemo>.
+WARNING:Xst:2677 - Node <XLXI_25/zpos_1> of sequential type is unconnected in block <BasysRevEDemo>.
+WARNING:Xst:2677 - Node <XLXI_25/zpos_0> of sequential type is unconnected in block <BasysRevEDemo>.
+WARNING:Xst:2677 - Node <XLXI_25/left_down> of sequential type is unconnected in block <BasysRevEDemo>.
+WARNING:Xst:2677 - Node <XLXI_25/right_down> of sequential type is unconnected in block <BasysRevEDemo>.
+WARNING:Xst:2677 - Node <XLXI_25/new_event> of sequential type is unconnected in block <BasysRevEDemo>.
+WARNING:Xst:2677 - Node <XLXI_25/middle_down> of sequential type is unconnected in block <BasysRevEDemo>.
+WARNING:Xst:1294 - Latch <XLXI_1/Horigin_9> is equivalent to a wire in block <BasysRevEDemo>.
+WARNING:Xst:1294 - Latch <XLXI_1/Horigin_8> is equivalent to a wire in block <BasysRevEDemo>.
+WARNING:Xst:1294 - Latch <XLXI_1/Horigin_7> is equivalent to a wire in block <BasysRevEDemo>.
+WARNING:Xst:1294 - Latch <XLXI_1/Horigin_6> is equivalent to a wire in block <BasysRevEDemo>.
+WARNING:Xst:1294 - Latch <XLXI_1/Horigin_5> is equivalent to a wire in block <BasysRevEDemo>.
+WARNING:Xst:1294 - Latch <XLXI_1/Horigin_4> is equivalent to a wire in block <BasysRevEDemo>.
+WARNING:Xst:1294 - Latch <XLXI_1/Horigin_3> is equivalent to a wire in block <BasysRevEDemo>.
+WARNING:Xst:1294 - Latch <XLXI_1/Horigin_2> is equivalent to a wire in block <BasysRevEDemo>.
+WARNING:Xst:1294 - Latch <XLXI_1/Horigin_1> is equivalent to a wire in block <BasysRevEDemo>.
+WARNING:Xst:1294 - Latch <XLXI_1/Horigin_0> is equivalent to a wire in block <BasysRevEDemo>.
+WARNING:Xst:1294 - Latch <XLXI_1/Vorigin_9> is equivalent to a wire in block <BasysRevEDemo>.
+WARNING:Xst:1294 - Latch <XLXI_1/Vorigin_8> is equivalent to a wire in block <BasysRevEDemo>.
+WARNING:Xst:1294 - Latch <XLXI_1/Vorigin_7> is equivalent to a wire in block <BasysRevEDemo>.
+WARNING:Xst:1294 - Latch <XLXI_1/Vorigin_6> is equivalent to a wire in block <BasysRevEDemo>.
+WARNING:Xst:1294 - Latch <XLXI_1/Vorigin_5> is equivalent to a wire in block <BasysRevEDemo>.
+WARNING:Xst:1294 - Latch <XLXI_1/Vorigin_4> is equivalent to a wire in block <BasysRevEDemo>.
+WARNING:Xst:1294 - Latch <XLXI_1/Vorigin_3> is equivalent to a wire in block <BasysRevEDemo>.
+WARNING:Xst:1294 - Latch <XLXI_1/Vorigin_2> is equivalent to a wire in block <BasysRevEDemo>.
+WARNING:Xst:1294 - Latch <XLXI_1/Vorigin_1> is equivalent to a wire in block <BasysRevEDemo>.
+WARNING:Xst:1294 - Latch <XLXI_1/Vorigin_0> is equivalent to a wire in block <BasysRevEDemo>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block BasysRevEDemo, actual ratio is 102.
+Optimizing block <BasysRevEDemo> to meet ratio 100 (+ 5) of 960 slices :
+Area constraint is met for block <BasysRevEDemo>, final ratio is 95.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 591
+ Flip-Flops                                            : 591
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : BasysRevEDemo.ngr
+Top Level Output File Name         : BasysRevEDemo
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 46
+
+Cell Usage :
+# BELS                             : 2510
+#      GND                         : 1
+#      INV                         : 37
+#      LUT1                        : 103
+#      LUT2                        : 228
+#      LUT2_D                      : 1
+#      LUT2_L                      : 1
+#      LUT3                        : 482
+#      LUT3_D                      : 2
+#      LUT3_L                      : 3
+#      LUT4                        : 737
+#      LUT4_D                      : 4
+#      LUT4_L                      : 10
+#      MUXCY                       : 521
+#      MUXF5                       : 125
+#      MUXF6                       : 13
+#      VCC                         : 1
+#      XORCY                       : 241
+# FlipFlops/Latches                : 626
+#      FD                          : 110
+#      FDC                         : 72
+#      FDE                         : 314
+#      FDP                         : 2
+#      FDR                         : 14
+#      FDRE                        : 76
+#      FDRSE                       : 1
+#      FDSE                        : 2
+#      LD                          : 35
+# Clock Buffers                    : 8
+#      BUFG                        : 6
+#      BUFGMUX                     : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 45
+#      IBUF                        : 12
+#      IBUFG                       : 1
+#      IOBUF                       : 2
+#      OBUF                        : 30
+# DLLs                             : 1
+#      CLKDLL                      : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100etq144-5 
+
+ Number of Slices:                      881  out of    960    91%  
+ Number of Slice Flip Flops:            626  out of   1920    32%  
+ Number of 4 input LUTs:               1608  out of   1920    83%  
+ Number of IOs:                          46
+ Number of bonded IOBs:                  46  out of    108    42%  
+ Number of GCLKs:                         8  out of     24    33%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+------------------------------------------------------------------------+------------------------------------+-------+
+Clock Signal                                                            | Clock buffer(FF name)              | Load  |
+------------------------------------------------------------------------+------------------------------------+-------+
+CLK1                                                                    | BUFGP                              | 23    |
+CLK2                                                                    | BUFGMUX+XLXI_66/CLKDLL_inst:CLK2X  | 204   |
+CLK2                                                                    | BUFGMUX+XLXI_66/CLKDLL_inst:CLKDV  | 50    |
+XLXI_175/NextSnake<0>_0_not00011(XLXI_175/NextSnake<0>_0_not000160_f5:O)| BUFG(*)(XLXI_175/NextSnake<0>_0_31)| 35    |
+XLXI_175/cntDiv_171                                                     | BUFG                               | 64    |
+XLXI_175/cntDiv_211                                                     | BUFG                               | 250   |
+------------------------------------------------------------------------+------------------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------------+-------+
+Control Signal                     | Buffer(FF name)              | Load  |
+-----------------------------------+------------------------------+-------+
+XLXN_157(XLXI_65:G)                | NONE(XLXI_25/state_FSM_FFd22)| 74    |
+-----------------------------------+------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 14.405ns (Maximum Frequency: 69.422MHz)
+   Minimum input arrival time before clock: 4.260ns
+   Maximum output required time after clock: 18.580ns
+   Maximum combinational path delay: 2.920ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK1'
+  Clock period: 4.287ns (frequency: 233.291MHz)
+  Total number of paths / destination ports: 254 / 23
+-------------------------------------------------------------------------
+Delay:               4.287ns (Levels of Logic = 14)
+  Source:            XLXI_175/cntDiv_9 (FF)
+  Destination:       XLXI_175/cntDiv_21 (FF)
+  Source Clock:      CLK1 rising
+  Destination Clock: CLK1 rising
+
+  Data Path: XLXI_175/cntDiv_9 to XLXI_175/cntDiv_21
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              25   0.514   1.223  XLXI_175/cntDiv_9 (XLXI_175/cntDiv_9)
+     LUT1:I0->O            1   0.612   0.000  XLXI_175/Mcount_cntDiv_cy<9>_rt (XLXI_175/Mcount_cntDiv_cy<9>_rt)
+     MUXCY:S->O            1   0.404   0.000  XLXI_175/Mcount_cntDiv_cy<9> (XLXI_175/Mcount_cntDiv_cy<9>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_175/Mcount_cntDiv_cy<10> (XLXI_175/Mcount_cntDiv_cy<10>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_175/Mcount_cntDiv_cy<11> (XLXI_175/Mcount_cntDiv_cy<11>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_175/Mcount_cntDiv_cy<12> (XLXI_175/Mcount_cntDiv_cy<12>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_175/Mcount_cntDiv_cy<13> (XLXI_175/Mcount_cntDiv_cy<13>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_175/Mcount_cntDiv_cy<14> (XLXI_175/Mcount_cntDiv_cy<14>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_175/Mcount_cntDiv_cy<15> (XLXI_175/Mcount_cntDiv_cy<15>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_175/Mcount_cntDiv_cy<16> (XLXI_175/Mcount_cntDiv_cy<16>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_175/Mcount_cntDiv_cy<17> (XLXI_175/Mcount_cntDiv_cy<17>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_175/Mcount_cntDiv_cy<18> (XLXI_175/Mcount_cntDiv_cy<18>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_175/Mcount_cntDiv_cy<19> (XLXI_175/Mcount_cntDiv_cy<19>)
+     MUXCY:CI->O           0   0.051   0.000  XLXI_175/Mcount_cntDiv_cy<20> (XLXI_175/Mcount_cntDiv_cy<20>)
+     XORCY:CI->O           1   0.699   0.000  XLXI_175/Mcount_cntDiv_xor<21> (XLXI_175/Result<21>)
+     FD:D                      0.268          XLXI_175/cntDiv_21
+    ----------------------------------------
+    Total                      4.287ns (3.064ns logic, 1.223ns route)
+                                       (71.5% logic, 28.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK2'
+  Clock period: 14.405ns (frequency: 69.422MHz)
+  Total number of paths / destination ports: 8107 / 438
+-------------------------------------------------------------------------
+Delay:               7.202ns (Levels of Logic = 15)
+  Source:            XLXI_25/x_overflow (FF)
+  Destination:       XLXI_25/x_pos_10 (FF)
+  Source Clock:      CLK2 rising 2.0X
+  Destination Clock: CLK2 rising 2.0X
+
+  Data Path: XLXI_25/x_overflow to XLXI_25/x_pos_10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             18   0.514   0.938  XLXI_25/x_overflow (XLXI_25/x_overflow)
+     LUT3:I2->O            1   0.612   0.000  XLXI_25/Madd_x_pos_addsub0000_lut<0> (XLXI_25/Madd_x_pos_addsub0000_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  XLXI_25/Madd_x_pos_addsub0000_cy<0> (XLXI_25/Madd_x_pos_addsub0000_cy<0>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_25/Madd_x_pos_addsub0000_cy<1> (XLXI_25/Madd_x_pos_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_25/Madd_x_pos_addsub0000_cy<2> (XLXI_25/Madd_x_pos_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_25/Madd_x_pos_addsub0000_cy<3> (XLXI_25/Madd_x_pos_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_25/Madd_x_pos_addsub0000_cy<4> (XLXI_25/Madd_x_pos_addsub0000_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_25/Madd_x_pos_addsub0000_cy<5> (XLXI_25/Madd_x_pos_addsub0000_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_25/Madd_x_pos_addsub0000_cy<6> (XLXI_25/Madd_x_pos_addsub0000_cy<6>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_25/Madd_x_pos_addsub0000_cy<7> (XLXI_25/Madd_x_pos_addsub0000_cy<7>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_25/Madd_x_pos_addsub0000_cy<8> (XLXI_25/Madd_x_pos_addsub0000_cy<8>)
+     XORCY:CI->O           2   0.699   0.532  XLXI_25/Madd_x_pos_addsub0000_xor<9> (XLXI_25/Mcompar_x_pos_cmp_gt0000_lut<8>)
+     LUT1:I0->O            1   0.612   0.000  XLXI_25/Mcompar_x_pos_cmp_gt0000_cy<8>_rt (XLXI_25/Mcompar_x_pos_cmp_gt0000_cy<8>_rt)
+     MUXCY:S->O            1   0.404   0.000  XLXI_25/Mcompar_x_pos_cmp_gt0000_cy<8> (XLXI_25/Mcompar_x_pos_cmp_gt0000_cy<8>)
+     MUXCY:CI->O          11   0.400   0.796  XLXI_25/Mcompar_x_pos_cmp_gt0000_cy<9> (XLXI_25/Mcompar_x_pos_cmp_gt0000_cy<9>)
+     LUT4:I3->O            1   0.612   0.000  XLXI_25/x_pos_mux0003<9>1 (XLXI_25/x_pos_mux0003<9>)
+     FDRE:D                    0.268          XLXI_25/x_pos_9
+    ----------------------------------------
+    Total                      7.202ns (4.937ns logic, 2.266ns route)
+                                       (68.5% logic, 31.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_175/cntDiv_171'
+  Clock period: 5.062ns (frequency: 197.531MHz)
+  Total number of paths / destination ports: 4352 / 128
+-------------------------------------------------------------------------
+Delay:               5.062ns (Levels of Logic = 3)
+  Source:            XLXI_175/cmpPwm_6_3 (FF)
+  Destination:       XLXI_175/cmpPwm_6_7 (FF)
+  Source Clock:      XLXI_175/cntDiv_171 rising
+  Destination Clock: XLXI_175/cntDiv_171 rising
+
+  Data Path: XLXI_175/cmpPwm_6_3 to XLXI_175/cmpPwm_6_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              5   0.514   0.690  XLXI_175/cmpPwm_6_3 (XLXI_175/cmpPwm_6_3)
+     LUT4:I0->O            1   0.612   0.509  XLXI_175/cmpPwm_6_not000153 (XLXI_175/cmpPwm_6_not000153)
+     LUT2:I0->O            1   0.612   0.387  XLXI_175/cmpPwm_6_not000159 (XLXI_175/cmpPwm_6_not000159)
+     LUT4:I2->O            8   0.612   0.643  XLXI_175/cmpPwm_6_not000180 (XLXI_175/cmpPwm_6_not0001)
+     FDE:CE                    0.483          XLXI_175/cmpPwm_6_0
+    ----------------------------------------
+    Total                      5.062ns (2.833ns logic, 2.230ns route)
+                                       (56.0% logic, 44.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_175/cntDiv_211'
+  Clock period: 6.537ns (frequency: 152.971MHz)
+  Total number of paths / destination ports: 17585 / 426
+-------------------------------------------------------------------------
+Delay:               6.537ns (Levels of Logic = 11)
+  Source:            XLXI_175/Snake<0>_0_2 (FF)
+  Destination:       XLXI_175/Snake<4>_1_2 (FF)
+  Source Clock:      XLXI_175/cntDiv_211 rising
+  Destination Clock: XLXI_175/cntDiv_211 rising
+
+  Data Path: XLXI_175/Snake<0>_0_2 to XLXI_175/Snake<4>_1_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              10   0.514   0.902  XLXI_175/Snake<0>_0_2 (XLXI_175/Snake<0>_0_2)
+     LUT4:I0->O            1   0.612   0.000  XLXI_175/Mcompar_NextSnake<4>_1_cmp_eq0000_lut<0> (XLXI_175/Mcompar_NextSnake<4>_1_cmp_eq0000_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  XLXI_175/Mcompar_NextSnake<4>_1_cmp_eq0000_cy<0> (XLXI_175/Mcompar_NextSnake<4>_1_cmp_eq0000_cy<0>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_175/Mcompar_NextSnake<4>_1_cmp_eq0000_cy<1> (XLXI_175/Mcompar_NextSnake<4>_1_cmp_eq0000_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_175/Mcompar_NextSnake<4>_1_cmp_eq0000_cy<2> (XLXI_175/Mcompar_NextSnake<4>_1_cmp_eq0000_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_175/Mcompar_NextSnake<4>_1_cmp_eq0000_cy<3> (XLXI_175/Mcompar_NextSnake<4>_1_cmp_eq0000_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_175/Mcompar_NextSnake<4>_1_cmp_eq0000_cy<4> (XLXI_175/Mcompar_NextSnake<4>_1_cmp_eq0000_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_175/Mcompar_NextSnake<4>_1_cmp_eq0000_cy<5> (XLXI_175/Mcompar_NextSnake<4>_1_cmp_eq0000_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_175/Mcompar_NextSnake<4>_1_cmp_eq0000_cy<6> (XLXI_175/Mcompar_NextSnake<4>_1_cmp_eq0000_cy<6>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_175/Mcompar_NextSnake<4>_1_cmp_eq0000_cy<7> (XLXI_175/Mcompar_NextSnake<4>_1_cmp_eq0000_cy<7>)
+     MUXCY:CI->O         233   0.399   1.130  XLXI_175/Mcompar_NextSnake<4>_1_cmp_eq0000_cy<8> (XLXI_175/Mcompar_NextSnake<4>_1_cmp_eq0000_cy<8>)
+     LUT4:I3->O          210   0.612   1.121  XLXI_175/Snake<3>_0_not00011 (XLXI_175/Snake<3>_0_not0001)
+     FDE:CE                    0.483          XLXI_175/Snake<3>_0_0
+    ----------------------------------------
+    Total                      6.537ns (3.385ns logic, 3.152ns route)
+                                       (51.8% logic, 48.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK2'
+  Total number of paths / destination ports: 14 / 14
+-------------------------------------------------------------------------
+Offset:              4.050ns (Levels of Logic = 3)
+  Source:            PS2C (PAD)
+  Destination:       XLXI_27/ps2_clk_clean (FF)
+  Destination Clock: CLK2 rising 2.0X
+
+  Data Path: PS2C to XLXI_27/ps2_clk_clean
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IOBUF:IO->O           3   1.106   0.520  PS2C_IOBUF (N182)
+     LUT3:I1->O            1   0.612   0.360  XLXI_27/ps2_clk_clean_not0001_SW0 (N44)
+     LUT4:I3->O            1   0.612   0.357  XLXI_27/ps2_clk_clean_not0001 (XLXI_27/ps2_clk_clean_not0001)
+     FDE:CE                    0.483          XLXI_27/ps2_clk_clean
+    ----------------------------------------
+    Total                      4.050ns (2.813ns logic, 1.237ns route)
+                                       (69.5% logic, 30.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXI_175/cntDiv_171'
+  Total number of paths / destination ports: 416 / 128
+-------------------------------------------------------------------------
+Offset:              4.260ns (Levels of Logic = 10)
+  Source:            sw<7> (PAD)
+  Destination:       XLXI_175/cmpPwm_7_7 (FF)
+  Destination Clock: XLXI_175/cntDiv_171 rising
+
+  Data Path: sw<7> to XLXI_175/cmpPwm_7_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            11   1.106   0.862  sw_7_IBUF (sw_7_IBUF)
+     LUT4:I1->O            1   0.612   0.000  XLXI_175/Mcount_cmpPwm_7_lut<0> (XLXI_175/Mcount_cmpPwm_7_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  XLXI_175/Mcount_cmpPwm_7_cy<0> (XLXI_175/Mcount_cmpPwm_7_cy<0>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_175/Mcount_cmpPwm_7_cy<1> (XLXI_175/Mcount_cmpPwm_7_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_175/Mcount_cmpPwm_7_cy<2> (XLXI_175/Mcount_cmpPwm_7_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_175/Mcount_cmpPwm_7_cy<3> (XLXI_175/Mcount_cmpPwm_7_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_175/Mcount_cmpPwm_7_cy<4> (XLXI_175/Mcount_cmpPwm_7_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_175/Mcount_cmpPwm_7_cy<5> (XLXI_175/Mcount_cmpPwm_7_cy<5>)
+     MUXCY:CI->O           0   0.051   0.000  XLXI_175/Mcount_cmpPwm_7_cy<6> (XLXI_175/Mcount_cmpPwm_7_cy<6>)
+     XORCY:CI->O           1   0.699   0.000  XLXI_175/Mcount_cmpPwm_7_xor<7> (XLXI_175/Result<7>6)
+     FDE:D                     0.268          XLXI_175/cmpPwm_7_7
+    ----------------------------------------
+    Total                      4.260ns (3.398ns logic, 0.862ns route)
+                                       (79.8% logic, 20.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXI_175/cntDiv_211'
+  Total number of paths / destination ports: 12 / 6
+-------------------------------------------------------------------------
+Offset:              3.473ns (Levels of Logic = 2)
+  Source:            btn<3> (PAD)
+  Destination:       XLXI_175/NextTarget_1 (FF)
+  Destination Clock: XLXI_175/cntDiv_211 rising
+
+  Data Path: btn<3> to XLXI_175/NextTarget_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.106   0.603  btn_3_IBUF (btn_3_IBUF)
+     LUT2:I0->O            1   0.612   0.357  XLXI_175/btn<3>1 (XLXI_175/btn<3>1)
+     FDSE:S                    0.795          XLXI_175/NextTarget_1
+    ----------------------------------------
+    Total                      3.473ns (2.513ns logic, 0.960ns route)
+                                       (72.4% logic, 27.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK2'
+  Total number of paths / destination ports: 212172 / 12
+-------------------------------------------------------------------------
+Offset:              18.580ns (Levels of Logic = 18)
+  Source:            XLXI_2/intHcnt_0 (FF)
+  Destination:       vgaRed<2> (PAD)
+  Source Clock:      CLK2 rising 0.5X
+
+  Data Path: XLXI_2/intHcnt_0 to vgaRed<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              7   0.514   0.754  XLXI_2/intHcnt_0 (XLXI_2/intHcnt_0)
+     LUT2:I0->O            1   0.612   0.000  XLXI_1/Msub_adrVideoPixel_lut<0> (XLXI_1/Msub_adrVideoPixel_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  XLXI_1/Msub_adrVideoPixel_cy<0> (XLXI_1/Msub_adrVideoPixel_cy<0>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_1/Msub_adrVideoPixel_cy<1> (XLXI_1/Msub_adrVideoPixel_cy<1>)
+     XORCY:CI->O         119   0.699   1.248  XLXI_1/Msub_adrVideoPixel_xor<2> (XLXN_523<2>)
+     LUT4:I0->O            4   0.612   0.651  XLXI_172/Mrom_outRed_rom00048011 (XLXI_172/Mrom_outRed_rom0004160)
+     LUT4:I0->O            1   0.612   0.000  XLXI_172/AdrB<4>_mmx_out10211 (XLXI_172/AdrB<4>_mmx_out1021)
+     MUXF5:I0->O           4   0.278   0.529  XLXI_172/AdrB<4>_mmx_out1021_f5 (XLXI_172/AdrB<4>_mmx_out102)
+     LUT3:I2->O            2   0.612   0.449  XLXI_172/AdrB<5>721 (XLXI_172/AdrB<5>_mmx_out61)
+     LUT3:I1->O            1   0.612   0.000  XLXI_172/Mrom_outRed_rom00041161_133 (XLXI_172/Mrom_outRed_rom00041161_133)
+     MUXF5:I1->O           1   0.278   0.426  XLXI_172/Mrom_outRed_rom00041161_12_f5_2 (XLXI_172/Mrom_outRed_rom00041161_12_f53)
+     LUT3:I1->O            1   0.612   0.000  XLXI_172/Mrom_outRed_rom00041161_9 (XLXI_172/Mrom_outRed_rom00041161_9)
+     MUXF5:I1->O           1   0.278   0.387  XLXI_172/Mrom_outRed_rom00041161_8_f5 (XLXI_172/Mrom_outRed_rom00041161_8_f5)
+     LUT3:I2->O            1   0.612   0.000  XLXI_172/Mrom_outRed_rom00041161_4 (XLXI_172/Mrom_outRed_rom00041161_4)
+     MUXF5:I0->O           6   0.278   0.638  XLXI_172/Mrom_outRed_rom00041161_2_f5 (XLXI_172/N3)
+     LUT4:I1->O            1   0.612   0.360  XLXI_1/outRed_and000248_SW1 (N392)
+     LUT4:I3->O            8   0.612   0.712  XLXI_1/outRed_and000248 (XLXI_1/outRed_and0002)
+     LUT4:I1->O            1   0.612   0.357  XLXI_1/outRed<2>1 (vgaRed_2_OBUF)
+     OBUF:I->O                 3.169          vgaRed_2_OBUF (vgaRed<2>)
+    ----------------------------------------
+    Total                     18.580ns (12.070ns logic, 6.511ns route)
+                                       (65.0% logic, 35.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_175/cntDiv_211'
+  Total number of paths / destination ports: 3168 / 12
+-------------------------------------------------------------------------
+Offset:              14.160ns (Levels of Logic = 19)
+  Source:            XLXI_175/Snake<1>_0_2 (FF)
+  Destination:       seg<5> (PAD)
+  Source Clock:      XLXI_175/cntDiv_211 rising
+
+  Data Path: XLXI_175/Snake<1>_0_2 to seg<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.514   0.532  XLXI_175/Snake<1>_0_2 (XLXI_175/Snake<1>_0_2)
+     LUT4:I0->O            1   0.612   0.000  XLXI_175/Mcompar_seg_0_cmp_eq0010_lut<0> (XLXI_175/Mcompar_seg_0_cmp_eq0010_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  XLXI_175/Mcompar_seg_0_cmp_eq0010_cy<0> (XLXI_175/Mcompar_seg_0_cmp_eq0010_cy<0>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_175/Mcompar_seg_0_cmp_eq0010_cy<1> (XLXI_175/Mcompar_seg_0_cmp_eq0010_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_175/Mcompar_seg_0_cmp_eq0010_cy<2> (XLXI_175/Mcompar_seg_0_cmp_eq0010_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_175/Mcompar_seg_0_cmp_eq0010_cy<3> (XLXI_175/Mcompar_seg_0_cmp_eq0010_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_175/Mcompar_seg_0_cmp_eq0010_cy<4> (XLXI_175/Mcompar_seg_0_cmp_eq0010_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_175/Mcompar_seg_0_cmp_eq0010_cy<5> (XLXI_175/Mcompar_seg_0_cmp_eq0010_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_175/Mcompar_seg_0_cmp_eq0010_cy<6> (XLXI_175/Mcompar_seg_0_cmp_eq0010_cy<6>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_175/Mcompar_seg_0_cmp_eq0010_cy<7> (XLXI_175/Mcompar_seg_0_cmp_eq0010_cy<7>)
+     MUXCY:CI->O           4   0.399   0.529  XLXI_175/Mcompar_seg_0_cmp_eq0010_cy<8> (XLXI_175/Mcompar_seg_0_cmp_eq0010_cy<8>)
+     LUT3:I2->O            4   0.612   0.568  XLXI_175/seg_4_and000511 (XLXI_175/N95)
+     LUT4:I1->O            1   0.612   0.426  XLXI_175/seg_5_mux000639 (XLXI_175/seg_5_mux000639)
+     LUT3:I1->O            2   0.612   0.449  XLXI_175/seg_5_mux000668_SW0 (N246)
+     LUT2:I1->O            1   0.612   0.000  XLXI_175/seg_5_mux0006112_SW02 (XLXI_175/seg_5_mux0006112_SW01)
+     MUXF5:I0->O           1   0.278   0.426  XLXI_175/seg_5_mux0006112_SW0_f5 (N184)
+     LUT4:I1->O            1   0.612   0.426  XLXI_175/seg_5_mux0006112 (XLXI_175/seg_5_mux0006112)
+     LUT4:I1->O            1   0.612   0.426  XLXI_175/seg_5_mux0006153_SW0 (N186)
+     LUT4:I1->O            1   0.612   0.357  XLXI_175/seg_5_mux0006162 (seg_5_OBUF)
+     OBUF:I->O                 3.169          seg_5_OBUF (seg<5>)
+    ----------------------------------------
+    Total                     14.160ns (10.021ns logic, 4.139ns route)
+                                       (70.8% logic, 29.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK1'
+  Total number of paths / destination ports: 448 / 21
+-------------------------------------------------------------------------
+Offset:              14.244ns (Levels of Logic = 11)
+  Source:            XLXI_175/cntDiv_15 (FF)
+  Destination:       seg<5> (PAD)
+  Source Clock:      CLK1 rising
+
+  Data Path: XLXI_175/cntDiv_15 to seg<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              21   0.514   1.028  XLXI_175/cntDiv_15 (XLXI_175/cntDiv_15)
+     LUT4:I1->O            1   0.612   0.000  XLXI_175/Mcompar_seg_0_cmp_eq0010_lut<8> (XLXI_175/Mcompar_seg_0_cmp_eq0010_lut<8>)
+     MUXCY:S->O            4   0.752   0.529  XLXI_175/Mcompar_seg_0_cmp_eq0010_cy<8> (XLXI_175/Mcompar_seg_0_cmp_eq0010_cy<8>)
+     LUT3:I2->O            4   0.612   0.568  XLXI_175/seg_4_and000511 (XLXI_175/N95)
+     LUT4:I1->O            1   0.612   0.426  XLXI_175/seg_5_mux000639 (XLXI_175/seg_5_mux000639)
+     LUT3:I1->O            2   0.612   0.449  XLXI_175/seg_5_mux000668_SW0 (N246)
+     LUT2:I1->O            1   0.612   0.000  XLXI_175/seg_5_mux0006112_SW02 (XLXI_175/seg_5_mux0006112_SW01)
+     MUXF5:I0->O           1   0.278   0.426  XLXI_175/seg_5_mux0006112_SW0_f5 (N184)
+     LUT4:I1->O            1   0.612   0.426  XLXI_175/seg_5_mux0006112 (XLXI_175/seg_5_mux0006112)
+     LUT4:I1->O            1   0.612   0.426  XLXI_175/seg_5_mux0006153_SW0 (N186)
+     LUT4:I1->O            1   0.612   0.357  XLXI_175/seg_5_mux0006162 (seg_5_OBUF)
+     OBUF:I->O                 3.169          seg_5_OBUF (seg<5>)
+    ----------------------------------------
+    Total                     14.244ns (9.609ns logic, 4.635ns route)
+                                       (67.5% logic, 32.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_175/cntDiv_171'
+  Total number of paths / destination ports: 64 / 8
+-------------------------------------------------------------------------
+Offset:              7.341ns (Levels of Logic = 11)
+  Source:            XLXI_175/cmpPwm_7_0 (FF)
+  Destination:       led<7> (PAD)
+  Source Clock:      XLXI_175/cntDiv_171 rising
+
+  Data Path: XLXI_175/cmpPwm_7_0 to led<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              5   0.514   0.607  XLXI_175/cmpPwm_7_0 (XLXI_175/cmpPwm_7_0)
+     LUT2:I1->O            1   0.612   0.000  XLXI_175/Mcompar_led_7_cmp_lt0000_lut<0> (XLXI_175/Mcompar_led_7_cmp_lt0000_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  XLXI_175/Mcompar_led_7_cmp_lt0000_cy<0> (XLXI_175/Mcompar_led_7_cmp_lt0000_cy<0>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_175/Mcompar_led_7_cmp_lt0000_cy<1> (XLXI_175/Mcompar_led_7_cmp_lt0000_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_175/Mcompar_led_7_cmp_lt0000_cy<2> (XLXI_175/Mcompar_led_7_cmp_lt0000_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_175/Mcompar_led_7_cmp_lt0000_cy<3> (XLXI_175/Mcompar_led_7_cmp_lt0000_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_175/Mcompar_led_7_cmp_lt0000_cy<4> (XLXI_175/Mcompar_led_7_cmp_lt0000_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_175/Mcompar_led_7_cmp_lt0000_cy<5> (XLXI_175/Mcompar_led_7_cmp_lt0000_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_175/Mcompar_led_7_cmp_lt0000_cy<6> (XLXI_175/Mcompar_led_7_cmp_lt0000_cy<6>)
+     MUXCY:CI->O           1   0.399   0.357  XLXI_175/Mcompar_led_7_cmp_lt0000_cy<7> (XLXI_175/Mcompar_led_7_cmp_lt0000_cy<7>)
+     INV:I->O              1   0.612   0.357  XLXI_175/Mcompar_led_7_cmp_lt0000_cy<7>_inv_INV_0 (led_7_OBUF)
+     OBUF:I->O                 3.169          led_7_OBUF (led<7>)
+    ----------------------------------------
+    Total                      7.341ns (6.020ns logic, 1.321ns route)
+                                       (82.0% logic, 18.0% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Delay:               2.920ns (Levels of Logic = 1)
+  Source:            CLK2 (PAD)
+  Destination:       XLXI_171/BUFGMUX_inst:I1 (PAD)
+
+  Data Path: CLK2 to XLXI_171/BUFGMUX_inst:I1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUFG:I->O            1   2.563   0.357  CLK2_IBUFG (CLK2_IBUFG)
+    BUFGMUX:I1                 0.000          XLXI_171/BUFGMUX_inst
+    ----------------------------------------
+    Total                      2.920ns (2.563ns logic, 0.357ns route)
+                                       (87.8% logic, 12.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 50.00 secs
+Total CPU time to Xst completion: 42.79 secs
+ 
+--> 
+
+
+Total memory usage is 195824 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  392 (   0 filtered)
+Number of infos    :   10 (   0 filtered)
+

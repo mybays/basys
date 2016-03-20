@@ -1,0 +1,4 @@
+xst -ise "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/BasysRevEDemo.ise" -intstyle ise -ifn "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/BasysRevEDemo.xst" -ofn "/home/mybays/xilinx/Basys_1.1/BasysDemo_ISEproject/BasysRevEDemo.syr" 
+ngdbuild -ise "BasysRevEDemo.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-tq144-5 BasysRevEDemo.ngc BasysRevEDemo.ngd  
+map -ise "BasysRevEDemo.ise" -intstyle ise -p xc3s100e-tq144-5 -cm area -ir off -pr b -c 100 -o BasysRevEDemo_map.ncd BasysRevEDemo.ngd BasysRevEDemo.pcf 
+par -ise "BasysRevEDemo.ise" -w -intstyle ise -ol std -t 1 BasysRevEDemo_map.ncd BasysRevEDemo.ncd BasysRevEDemo.pcf 

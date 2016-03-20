@@ -1,0 +1,196 @@
+Release 11.1 par L.33 (lin)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+
+spaceship::  Fri Apr 23 15:45:42 2010
+
+par -ise BasysRevEDemo.ise -w -intstyle ise -ol std -t 1 BasysRevEDemo_map.ncd
+BasysRevEDemo.ncd BasysRevEDemo.pcf 
+
+
+Constraints file: BasysRevEDemo.pcf.
+Loading device for application Rf_Device from file '3s100e.nph' in environment /opt/Xilinx/11.1/ISE.
+   "BasysRevEDemo" is an NCD, version 3.2, device xc3s100e, package tq144, speed -5
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+INFO:Security:54 - 'xc3s100e' is a WebPack part.
+WARNING:Security:42 - Your license support version '2010.04' for ISE expires in 6 days.
+
+----------------------------------------------------------------------
+No such feature exists.
+Feature:       WebPack
+License path: 
+/home/mybays/.Xilinx/XilinX_ISE11.lic:/opt/Xilinx/11.1/ISE/data/*.lic:/opt/Xilinx/11.1/EDK/data/core_licenses/apu_fpu_v2
+_flexlm.lic:/opt/Xilinx/11.1/EDK/data/core_licenses/apu_fpu_virtex5_v1_flexlm.lic:/opt/Xilinx/11.1/EDK/data/core_license
+s/opb_atmc_v1_00_b_flexlm.lic:/opt/Xilinx/11.1/EDK/data/core_licenses/opb_atmc_v2_00_a_flexlm.lic:/opt/Xilinx/11.1/EDK/d
+ata/core_licenses/opb_can_v1_flexlm.lic:/opt/Xilinx/11.1/EDK/data/core_licenses/opb_ethernet_v1_00_j_flexlm.lic:/opt/Xil
+inx/11.1/EDK/data/core_licenses/opb_ethernet_v1_00_k_flexlm.lic:/opt/Xilinx/11.1/EDK/data/core_licenses/opb_ethernet_v1_
+00_l_flexlm.lic:/opt/Xilinx/11.1/EDK/data/core_licenses/opb_ethernet_v1_00_m_flexlm.lic:/opt/Xilinx/11.1/EDK/data/core_l
+icenses/opb_ethernet_v1_01_a_flexlm.lic:/opt/Xilinx/11.1/EDK/data/core_licenses/opb_ethernet_v1_flexlm.lic:/opt/Xilinx/1
+1.1/EDK/data/core_licenses/opb_ethernetlite_v1_00_a_flexlm.lic:/opt/Xilinx/11.1/EDK/data/core_licenses/opb_ethernetlite_
+v1_flexlm.lic:/opt/Xilinx/11.1/EDK/data/core_licenses/opb_hdlc_v1_00_b_flexlm.lic:/opt/Xilinx/11.1/EDK/data/core_license
+s/opb_hdlc_v1_flexlm.lic:/opt/Xilinx/11.1/EDK/data/core_licenses/opb_hdlc_v2_00_a_flexlm.lic:/opt/Xilinx/11.1/EDK/data/c
+ore_licenses/opb_hdlc_v2_flexlm.lic:/opt/Xilinx/11.1/EDK/data/core_licenses/opb_iic_v1_01_a_flexlm.lic:/opt/Xilinx/11.1/
+EDK/data/core_licenses/opb_iic_v1_01_b_flexlm.lic:/opt/Xilinx/11.1/EDK/data/core_licenses/opb_iic_v1_flexlm.lic:/opt/Xil
+inx/11.1/EDK/data/core_licenses/opb_pci_v1_00_a_flexlm.lic:/opt/Xilinx/11.1/EDK/data/core_licenses/opb_pci_v1_00_b_flexl
+m.lic:/opt/Xilinx/11.1/EDK/data/core_licenses/opb_pci_v1_00_c_flexlm.lic:/opt/Xilinx/11.1/EDK/data/core_licenses/opb_pci
+_v1_flexlm.lic:/opt/Xilinx/11.1/EDK/data/core_licenses/opb_uart16550_v1_00_c_flexlm.lic:/opt/Xilinx/11.1/EDK/data/core_l
+icenses/opb_uart16550_v1_flexlm.lic:/opt/Xilinx/11.1/EDK/data/core_licenses/opb_usb2_device_v1_flexlm.lic:/opt/Xilinx/11
+.1/EDK/data/core_licenses/plb_atmc_v1_00_a_flexlm.lic:/opt/Xilinx/11.1/EDK/data/core_licenses/plb_ethernet_v1_00_a_flexl
+m.lic:/opt/Xilinx/11.1/EDK/data/core_licenses/plb_ethernet_v1_flexlm.lic:/opt/Xilinx/11.1/EDK/data/core_licenses/plb_gem
+ac_v1_00_a_flexlm.lic:/opt/Xilinx/11.1/EDK/data/core_licenses/plb_gemac_v1_00_b_flexlm.lic:/opt/Xilinx/11.1/EDK/data/cor
+e_licenses/plb_gemac_v1_01_a_flexlm.lic:/opt/Xilinx/11.1/EDK/data/core_licenses/plb_gemac_v2_flexlm.lic:/opt/Xilinx/11.1
+/EDK/data/core_licenses/plb_pci_v1_flexlm.lic:/opt/Xilinx/11.1/EDK/data/core_licenses/plb_rapidio_lvds_v1_00_a_flexlm.li
+c:/opt/Xilinx/11.1/EDK/data/core_licenses/plb_rapidio_lvds_v1_flexlm.lic:/opt/Xilinx/11.1/EDK/data/core_licenses/plb_tem
+ac_v1_flexlm.lic:/opt/Xilinx/11.1/EDK/data/core_licenses/plb_uart16550_v1_00_b_flexlm.lic:/opt/Xilinx/11.1/EDK/data/core
+_licenses/plb_uart16550_v1_00_c_flexlm.lic:/opt/Xilinx/11.1/EDK/data/core_licenses/plbv46_pci_v1_flexlm.lic:/opt/Xilinx/
+11.1/EDK/data/core_licenses/plbv46_pcie_v3_flexlm.lic:/opt/Xilinx/11.1/EDK/data/core_licenses/soft_temac_wrap_v1_flexlm.
+lic:[...]
+FLEXnet Licensing error:-5,357.  System Error: 2 "No such file or directory"
+For further information, refer to the FLEXnet Licensing documentation,
+available at "www.acresso.com".
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Initializing temperature to 85.000 Celsius. (default - Range: -40.000 to 100.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.320 Volts)
+
+INFO:Par:282 - No user timing constraints were detected or you have set the option to ignore timing constraints ("par
+   -x"). Place and Route will run in "Performance Evaluation Mode" to automatically improve the performance of all
+   internal clocks in this design. Because there are not defined timing requirements, a timing score will not be
+   reported in the PAR report in this mode. The PAR timing summary will list the performance achieved for each clock.
+   Note: For the fastest runtime, set the effort level to "std".  For best performance, set the effort level to "high".
+
+Device speed data version:  "PRODUCTION 1.27 2009-03-03".
+
+
+Design Summary Report:
+
+ Number of External IOBs                          46 out of 108    42%
+
+   Number of External Input IOBs                 14
+
+      Number of External Input IBUFs             14
+        Number of LOCed External Input IBUFs     14 out of 14    100%
+
+
+   Number of External Output IOBs                30
+
+      Number of External Output IOBs             30
+        Number of LOCed External Output IOBs     30 out of 30    100%
+
+
+   Number of External Bidir IOBs                  2
+
+      Number of External Bidir IOBs               2
+        Number of LOCed External Bidir IOBs       2 out of 2     100%
+
+
+   Number of BUFGMUXs                        7 out of 24     29%
+   Number of DCMs                            1 out of 2      50%
+   Number of Slices                        884 out of 960    92%
+      Number of SLICEMs                      0 out of 480     0%
+
+
+
+Overall effort level (-ol):   Standard 
+Placer effort level (-pl):    High 
+Placer cost table entry (-t): 1
+Router effort level (-rl):    Standard 
+
+Starting initial Timing Analysis.  REAL time: 4 secs 
+Finished initial Timing Analysis.  REAL time: 4 secs 
+
+
+Starting Placer
+Total REAL time at the beginning of Placer: 4 secs 
+Total CPU  time at the beginning of Placer: 3 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:df45406c) REAL time: 6 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:df45406c) REAL time: 6 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:df45406c) REAL time: 6 secs 
+
+Phase 4.2  Initial Clock and IO Placement
+
+...................
+ERROR:Place:1018 - A clock IOB / clock component pair have been found that are not placed at an optimal clock IOB /
+   clock site pair. The clock component <CLK1_BUFGP/BUFG> is placed at site <BUFGMUX_X2Y1>. The IO component <CLK1> is
+   placed at site <P54>.  This will not allow the use of the fast path between the IO and the Clock buffer. If this sub
+   optimal condition is acceptable for this design, you may use the CLOCK_DEDICATED_ROUTE constraint in the .ucf file to
+   demote this message to a WARNING and allow your design to continue. However, the use of this override is highly
+   discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in
+   the design. A list of all the COMP.PINs used in this clock placement rule is listed below. These examples can be used
+   directly in the .ucf file to override this clock rule.
+   < NET "CLK1" CLOCK_DEDICATED_ROUTE = FALSE; >
+
+Phase 4.2  Initial Clock and IO Placement (Checksum:5e5630ab) REAL time: 11 secs 
+
+Total REAL time to Placer completion: 11 secs 
+Total CPU  time to Placer completion: 8 secs 
+
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|XLXI_175/cntDiv<17>* |              |      |      |            |             |
+|                     | BUFGMUX_X1Y10| No   |   32 |  0.000     |             |
++---------------------+--------------+------+------+------------+-------------+
+|            ck25MHz* | BUFGMUX_X2Y10| No   |   26 |  0.054     |             |
++---------------------+--------------+------+------+------------+-------------+
+|           ck100MHz* | BUFGMUX_X1Y11| No   |  128 |  0.054     |             |
++---------------------+--------------+------+------+------------+-------------+
+|         CLK1_BUFGP* |  BUFGMUX_X2Y1| No   |   12 |  0.000     |             |
++---------------------+--------------+------+------+------------+-------------+
+|XLXI_175/cntDiv<21>* |              |      |      |            |             |
+|                     |  BUFGMUX_X2Y0| No   |  129 |  0.054     |             |
++---------------------+--------------+------+------+------------+-------------+
+|XLXI_175/NextSnake<0 |              |      |      |            |             |
+|        >_0_not0001* | BUFGMUX_X2Y11| No   |   21 |  0.000     |             |
++---------------------+--------------+------+------+------------+-------------+
+* Some of the Clock networks are NOT completely routed
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+Timing Score: 0 (Setup: 0, Hold: 0)
+
+Generating Pad Report.
+
+1584 signals are not completely routed. See the BasysRevEDemo.unroutes file for a list of all unrouted signals.
+
+WARNING:Par:100 - Design is not completely routed.
+
+Total REAL time to PAR completion: 12 secs 
+Total CPU time to PAR completion: 9 secs 
+
+Peak Memory Usage:  125 MB
+
+Placement: Completed - errors found.
+Routing: Completed - errors found.
+
+Number of error messages: 1
+Number of warning messages: 2
+Number of info messages: 1
+
+Writing design to file BasysRevEDemo.ncd
+
+
+
+PAR done!

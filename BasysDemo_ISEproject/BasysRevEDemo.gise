@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="BasysRevEDemo.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="BasysRevEDemo.cmd_log"/>
+    <file xil_pn:fileType="FILE_JHD" xil_pn:name="BasysRevEDemo.jhd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="BasysRevEDemo.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="BasysRevEDemo.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="BasysRevEDemo.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="BasysRevEDemo.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="BasysRevEDemo.ngr"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="BasysRevEDemo.ntrc_log"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="BasysRevEDemo.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="BasysRevEDemo.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="BasysRevEDemo.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="BasysRevEDemo.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="BasysRevEDemo.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="BasysRevEDemo.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="BasysRevEDemo.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="BasysRevEDemo.vhf"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="BasysRevEDemo.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="BasysRevEDemo.xst"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="BasysRevEDemo_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="BasysRevEDemo_last_par.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="BasysRevEDemo_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="BasysRevEDemo_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="BasysRevEDemo_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="BasysRevEDemo_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="BasysRevEDemo_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="BasysRevEDemo_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="BasysRevEDemo_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="BasysRevEDemo_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="BasysRevEDemo_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="BasysRevEDemo_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="BasysRevEDemo_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="BasysRevEDemo_usage.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BCD" xil_pn:name="BasysRevEDemo_xdb/cst.xbcd"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="BasysRevEDemo_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1272008625" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1272008625">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1272008626" xil_pn:in_ck="1271756142368773285" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="3418866178078708973" xil_pn:start_ts="1272008625">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="BasysRevEDemo.vhf"/>
+    </transform>
+    <transform xil_pn:end_ts="1272008626" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="1769192116901899436" xil_pn:start_ts="1272008626">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1272008626" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1272008626">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1272008626" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-9044832904953873877" xil_pn:start_ts="1272008626">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1272008626" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:start_ts="1272008626">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1272008626" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-6972234381085462575" xil_pn:start_ts="1272008626">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1272008697" xil_pn:in_ck="6135403277084161398" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-7688170153034155816" xil_pn:start_ts="1272008626">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="BasysRevEDemo.cmd_log"/>
+      <outfile xil_pn:name="BasysRevEDemo.jhd"/>
+      <outfile xil_pn:name="BasysRevEDemo.lso"/>
+      <outfile xil_pn:name="BasysRevEDemo.ngc"/>
+      <outfile xil_pn:name="BasysRevEDemo.ngr"/>
+      <outfile xil_pn:name="BasysRevEDemo.ntrc_log"/>
+      <outfile xil_pn:name="BasysRevEDemo.prj"/>
+      <outfile xil_pn:name="BasysRevEDemo.stx"/>
+      <outfile xil_pn:name="BasysRevEDemo.syr"/>
+      <outfile xil_pn:name="BasysRevEDemo.xst"/>
+      <outfile xil_pn:name="BasysRevEDemo_summary.html"/>
+      <outfile xil_pn:name="BasysRevEDemo_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1272008698" xil_pn:in_ck="4368886634331600371" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-3878949579206083813" xil_pn:start_ts="1272008697">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="BasysRevEDemo_xdb/cst.xbcd"/>
+    </transform>
+    <transform xil_pn:end_ts="1272008714" xil_pn:in_ck="-6185224898677716942" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-2507004658668480178" xil_pn:start_ts="1272008698">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="BasysRevEDemo.bld"/>
+      <outfile xil_pn:name="BasysRevEDemo.cmd_log"/>
+      <outfile xil_pn:name="BasysRevEDemo.ngd"/>
+      <outfile xil_pn:name="BasysRevEDemo_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1272008738" xil_pn:in_ck="-6485103126357868077" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="4879638059680671466" xil_pn:start_ts="1272008714">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="BasysRevEDemo.pcf"/>
+      <outfile xil_pn:name="BasysRevEDemo_map.map"/>
+      <outfile xil_pn:name="BasysRevEDemo_map.mrp"/>
+      <outfile xil_pn:name="BasysRevEDemo_map.ncd"/>
+      <outfile xil_pn:name="BasysRevEDemo_map.ngm"/>
+      <outfile xil_pn:name="BasysRevEDemo_map.xrpt"/>
+      <outfile xil_pn:name="BasysRevEDemo_summary.xml"/>
+      <outfile xil_pn:name="BasysRevEDemo_usage.xml"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1272008755" xil_pn:in_ck="-5919840248321293940" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="7778158918526603854" xil_pn:start_ts="1272008738">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="BasysRevEDemo.ncd"/>
+      <outfile xil_pn:name="BasysRevEDemo.pad"/>
+      <outfile xil_pn:name="BasysRevEDemo.par"/>
+      <outfile xil_pn:name="BasysRevEDemo.unroutes"/>
+      <outfile xil_pn:name="BasysRevEDemo.xpi"/>
+      <outfile xil_pn:name="BasysRevEDemo_pad.csv"/>
+      <outfile xil_pn:name="BasysRevEDemo_pad.txt"/>
+      <outfile xil_pn:name="BasysRevEDemo_par.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+    </transform>
+  </transforms>
+
+</generated_project>

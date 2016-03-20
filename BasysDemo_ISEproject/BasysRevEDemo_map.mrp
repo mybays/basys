@@ -1,0 +1,280 @@
+Release 11.1 Map L.33 (lin)
+Xilinx Mapping Report File for Design 'BasysRevEDemo'
+
+Design Information
+------------------
+Command Line   : map -ise BasysRevEDemo.ise -intstyle ise -p xc3s100e-tq144-5
+-cm area -ir off -pr b -c 100 -o BasysRevEDemo_map.ncd BasysRevEDemo.ngd
+BasysRevEDemo.pcf 
+Target Device  : xc3s100e
+Target Package : tq144
+Target Speed   : -5
+Mapper Version : spartan3e -- $Revision: 1.51 $
+Mapped Date    : Fri Apr 23 15:45:24 2010
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:   13
+Logic Utilization:
+  Total Number Slice Registers:         620 out of   1,920   32%
+    Number used as Flip Flops:          585
+    Number used as Latches:              35
+  Number of 4 input LUTs:             1,500 out of   1,920   78%
+Logic Distribution:
+  Number of occupied Slices:            884 out of     960   92%
+    Number of Slices containing only related logic:     884 out of     884 100%
+    Number of Slices containing unrelated logic:          0 out of     884   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:       1,611 out of   1,920   83%
+    Number used as logic:             1,500
+    Number used as a route-thru:        111
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 46 out of     108   42%
+    IOB Flip Flops:                       6
+  Number of BUFGMUXs:                     7 out of      24   29%
+  Number of DCMs:                         1 out of       2   50%
+
+Average Fanout of Non-Clock Nets:                3.85
+
+Peak Memory Usage:  177 MB
+Total REAL time to MAP completion:  13 secs 
+Total CPU time to MAP completion:   7 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Modular Design Summary
+Section 11 - Timing Report
+Section 12 - Configuration String Information
+Section 13 - Control Set Information
+Section 14 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:Security:42 - Your license support version '2010.04' for ISE expires in
+6 days.
+WARNING:LIT:243 - Logical network XLXI_66/CLKDLL_inst/CLK0 has no load.
+WARNING:LIT:395 - The above warning message base_net_load_rule is repeated 16
+   more times for the following (max. 5 shown):
+   XLXI_66/CLKDLL_inst/CLK90,
+   XLXI_66/CLKDLL_inst/CLK180,
+   XLXI_66/CLKDLL_inst/CLK270,
+   XLXI_66/CLKDLL_inst/CLK2X180,
+   XLXI_66/CLKDLL_inst/CLKFX
+   To see the details of these warning messages, please use the -detail switch.
+WARNING:Pack:266 - The function generator XLXI_172/Mrom_outRed_rom00041161_14
+   failed to merge with F5 multiplexer XLXI_172/Mrom_outRed_rom00041161_12_f5. 
+   There is a conflict for the GYMUX.  The design will exhibit suboptimal
+   timing.
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp HSYNC is
+   set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp vgaRed<0>
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp vgaRed<1>
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp vgaRed<2>
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp VSYNC is
+   set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   vgaGreen<0> is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   vgaGreen<1> is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp
+   vgaGreen<2> is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp vgaBlue<0>
+   is set but the tri state is not configured. 
+WARNING:PhysDesignRules:781 - PULLUP on an active net. PULLUP of comp vgaBlue<1>
+   is set but the tri state is not configured. 
+
+Section 3 - Informational
+-------------------------
+INFO:Security:54 - 'xc3s100e' is a WebPack part.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+   1 block(s) removed
+   2 block(s) optimized away
+  21 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+Loadless block "XLXI_66/BUFG_inst1" (CKBUF) removed.
+The signal "XLXI_66/CLKDLL_inst/DSSEN" is sourceless and has been removed.
+The signal "XLXI_66/CLKDLL_inst/PSINCDEC" is sourceless and has been removed.
+The signal "XLXI_66/CLKDLL_inst/PSEN" is sourceless and has been removed.
+The signal "XLXI_66/CLKDLL_inst/PSCLK" is sourceless and has been removed.
+The signal "XLXI_66/CLKDLL_inst/CLK0" is sourceless and has been removed.
+The signal "XLXI_66/CLKDLL_inst/CLK90" is sourceless and has been removed.
+The signal "XLXI_66/CLKDLL_inst/CLK180" is sourceless and has been removed.
+The signal "XLXI_66/CLKDLL_inst/CLK270" is sourceless and has been removed.
+The signal "XLXI_66/CLKDLL_inst/CLK2X180" is sourceless and has been removed.
+The signal "XLXI_66/CLKDLL_inst/CLKFX" is sourceless and has been removed.
+The signal "XLXI_66/CLKDLL_inst/CLKFX180" is sourceless and has been removed.
+The signal "XLXI_66/CLKDLL_inst/LOCKED" is sourceless and has been removed.
+The signal "XLXI_66/CLKDLL_inst/PSDONE" is sourceless and has been removed.
+The signal "XLXI_66/CLKDLL_inst/STATUS<7>" is sourceless and has been removed.
+The signal "XLXI_66/CLKDLL_inst/STATUS<6>" is sourceless and has been removed.
+The signal "XLXI_66/CLKDLL_inst/STATUS<5>" is sourceless and has been removed.
+The signal "XLXI_66/CLKDLL_inst/STATUS<4>" is sourceless and has been removed.
+The signal "XLXI_66/CLKDLL_inst/STATUS<3>" is sourceless and has been removed.
+The signal "XLXI_66/CLKDLL_inst/STATUS<2>" is sourceless and has been removed.
+The signal "XLXI_66/CLKDLL_inst/STATUS<1>" is sourceless and has been removed.
+The signal "XLXI_66/CLKDLL_inst/STATUS<0>" is sourceless and has been removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+VCC 		XLXI_174
+GND 		XLXI_65
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| CLK1                               | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| CLK2                               | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| HSYNC                              | IOB              | OUTPUT    | LVCMOS25             |       | 2        | SLOW |              | PULLUP   | 0 / 0    |
+| PS2C                               | IOB              | BIDIR     | LVCMOS25             |       | 2        | SLOW | IFF1         | PULLUP   | 0 / 2    |
+|                                    |                  |           |                      |       |          |      | TFF1         |          |          |
+| PS2D                               | IOB              | BIDIR     | LVCMOS25             |       | 2        | SLOW | IFF1         | PULLUP   | 0 / 2    |
+|                                    |                  |           |                      |       |          |      | TFF1         |          |          |
+| VSYNC                              | IOB              | OUTPUT    | LVCMOS25             |       | 2        | SLOW | OFF1         | PULLUP   | 0 / 0    |
+| an<0>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| an<1>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| an<2>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| an<3>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| btn<0>                             | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| btn<1>                             | IBUF             | INPUT     | LVCMOS25             |       |          |      | IFF1         |          | 0 / 2    |
+| btn<2>                             | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| btn<3>                             | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| dp                                 | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| led<0>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| led<1>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| led<2>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| led<3>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| led<4>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| led<5>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| led<6>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| led<7>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| seg<0>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| seg<1>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| seg<2>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| seg<3>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| seg<4>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| seg<5>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| seg<6>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| sw<0>                              | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| sw<1>                              | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| sw<2>                              | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| sw<3>                              | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| sw<4>                              | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| sw<5>                              | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| sw<6>                              | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| sw<7>                              | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| vgaBlue<0>                         | IOB              | OUTPUT    | LVCMOS25             |       | 2        | SLOW |              | PULLUP   | 0 / 0    |
+| vgaBlue<1>                         | IOB              | OUTPUT    | LVCMOS25             |       | 2        | SLOW |              | PULLUP   | 0 / 0    |
+| vgaGreen<0>                        | IOB              | OUTPUT    | LVCMOS25             |       | 2        | SLOW |              | PULLUP   | 0 / 0    |
+| vgaGreen<1>                        | IOB              | OUTPUT    | LVCMOS25             |       | 2        | SLOW |              | PULLUP   | 0 / 0    |
+| vgaGreen<2>                        | IOB              | OUTPUT    | LVCMOS25             |       | 2        | SLOW |              | PULLUP   | 0 / 0    |
+| vgaRed<0>                          | IOB              | OUTPUT    | LVCMOS25             |       | 2        | SLOW |              | PULLUP   | 0 / 0    |
+| vgaRed<1>                          | IOB              | OUTPUT    | LVCMOS25             |       | 2        | SLOW |              | PULLUP   | 0 / 0    |
+| vgaRed<2>                          | IOB              | OUTPUT    | LVCMOS25             |       | 2        | SLOW |              | PULLUP   | 0 / 0    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Modular Design Summary
+-----------------------------------
+Modular Design not used for this design.
+
+Section 11 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 12 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 13 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 14 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.
